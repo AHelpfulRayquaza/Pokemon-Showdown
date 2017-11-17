@@ -1,108 +1,139 @@
 
- 
+
+  #looby-userlist-user-ahelpfulrayquaza, #staff-userlist-user-ahelpfulrayquaza, #shadowbanroom-userlist-user-ahelpfulrayquaza, #tournament-userlist-user-ahelpfulrayquaza, #skytower-userlist-user-ahelpfulrayquaza { 
+    background: rgba(244, 244, 244, 0.8) url("http://img3.wikia.nocookie.net/__cb20131226040239/es.pokemon/images/5/57/Rayquaza_icon.png") right no-repeat;
+  }
+
+  #looby-userlist-user-ahelpfulrayquaza, #staff-userlist-user-ahelpfulrayquaza, #shadowbanroom-userlist-user-ahelpfulrayquaza, #tournament-userlist-user-ahelpfulrayquaza, #skytower-userlist-user-ahelpfulrayquaza { 
+    background: rgba(244, 244, 244, 0.8) url("http://img3.wikia.nocookie.net/__cb20131226040239/es.pokemon/images/5/57/Rayquaza_icon.png") right no-repeat;
+  }
+  @-moz-document domain("play.pokemonshowdown.com"), domain("psim.us")
+{
+  
   /**************
   * General CSS *
   **************/
   
-  body {
+  body
+  {
     background: url("http://i.imgur.com/roQErS3.png") !important;
     background-size: cover !important;
   }
-  
-  .ps-room.ps-room-light {
+
+  .ps-room.ps-room-light
+  {
     background: transparent;
     border-color: #000;
   }
-  
-  .ps-overlay {
+
+  .ps-overlay
+  {
     background: rgba(0, 0, 0, 0.3);
   }
-  
-  button {
+
+  button
+  {
     border: 1px solid #000;
   }
-  
-  .header {
+
+  .header
+  {
     background: rgba(255, 255, 255, 0.5);
     background-size: cover;
   }
-  
-  .maintabbarbottom {
+
+  .maintabbarbottom
+  {
     border-color: #000;
     background: #F8F8F8;
   }
-  
-  .tabbar a.button.subtle-notifying, .tabbar a.button.subtle-notifying:hover {
+
+  .tabbar a.button.subtle-notifying, .tabbar a.button.subtle-notifying:hover
+  {
     color: #F58438;
   }
-  
-  .tabbar a.button.notifying {
+
+  .tabbar a.button.notifying
+  {
     border: 1px solid #F26330;
     background: transparent -moz-linear-gradient(center top , #EECC49, #F6AB52);
     text-shadow: 0px -1px 0px #F26330;
     color: #FFF;
   }
 
-  .tabbar a.button.notifying:hover {
+  .tabbar a.button.notifying:hover
+  {
     background: #F6AB52;
     border-color: #F26330;
     color: #FFF;
     text-shadow: 0px -1px 0px #F26330;
   }
-  
-  .tabbar a.button.cur, .tabbar a.button.cur:hover {
+
+  .tabbar a.button.cur, .tabbar a.button.cur:hover
+  {
     border-color: #000;
     color: #000;
     background: #F8F8F8;
     text-shadow: none;
   }
-  
-  .tabbar a.button {
+
+  .tabbar a.button
+  {
     background: transparent -moz-linear-gradient(center top , #F6F6F6, #E3E3E3) repeat scroll 0% 0%;
   }
-  
-  .tabbar a.button:hover {
+
+  .tabbar a.button:hover
+  {
     background: transparent -moz-linear-gradient(center top , #E3E3E3, #CCC) repeat scroll 0% 0%;
   }
-  
-  .tabbar a.button, .tabbar a.button:hover {
+
+  .tabbar a.button, .tabbar a.button:hover
+  {
     border-color: #000;
     text-shadow: none;
     color: #252525;
   }
-  
-  .ps-popup {
+
+  .ps-popup
+  {
     background: #EEE url("http://i.imgur.com/1Np7mNE.png?2") no-repeat bottom right;
     box-shadow: 1px 1px 0px #FFF inset, -1px -1px 0px #DDD inset, 2px 2px 3px rgba(0, 0, 0, 0.2);
     border-color: #000;
   }
 
-  .ps-popup hr {
+  .ps-popup hr
+  {
     border: none;
     border-bottom: 1px solid #000;
   }
-  
-  .ps-popup a {
+
+  .ps-popup a
+  {
     color: #5D7298;
   }
-  
-  .popupmenu h3, .credits h2, .credits ul {
+
+  .popupmenu h3, .credits h2, .credits ul
+  {
     color: #4C8B7A;
   }
-  
-  a.subtle {
+
+  a.subtle
+  {
     color: #000;
   }
-  
-  a.subtle:hover {
+
+  a.subtle:hover
+  {
     color: #151515;
   }
-  
-  .avatarlist button {
+
+  .avatarlist button
+  {
     border-color: #000;
   }
-  
-  .avatarlist button:hover {
+
+  .avatarlist button:hover
+  {
     border-color: #F4AB38;
   }
   
@@ -115,82 +146,95 @@
   * Mainmenuwrapper *
   ******************/
   
-  .menugroup {
+  .menugroup
+  {
     background: rgba(255, 255, 255, 0.5);
     border: 1px solid #000;
     color: #FFF;
     text-shadow: 0px 1px 0px #000;
   }
-  
-  .mainmenu .menugroup:nth-child(1) .button, .mainmenu .menugroup:nth-child(2) p:nth-child(1) .button, .mainmenu .menugroup:nth-child(2) p:nth-child(2) .button, .mainmenu .menugroup:nth-child(2) p:nth-child(3) .button, .mainmenu .menugroup:nth-child(3) p:nth-child(1) .button, .mainmenu .menugroup:nth-child(3) p:nth-child(2) .button, .mainmenu .menugroup:nth-child(1) .button:focus, .mainmenu .menugroup:nth-child(2) p:nth-child(1) .button:focus, .mainmenu .menugroup:nth-child(2) p:nth-child(2) .button:focus, .mainmenu .menugroup:nth-child(2) p:nth-child(3) .button:focus, .mainmenu .menugroup:nth-child(3) p:nth-child(1) .button:focus, .mainmenu .menugroup:nth-child(3) p:nth-child(2) .button:focus {
+
+  .mainmenu .menugroup:nth-child(1) .button, .mainmenu .menugroup:nth-child(2) p:nth-child(1) .button, .mainmenu .menugroup:nth-child(2) p:nth-child(2) .button, .mainmenu .menugroup:nth-child(2) p:nth-child(3) .button, .mainmenu .menugroup:nth-child(3) p:nth-child(1) .button, .mainmenu .menugroup:nth-child(3) p:nth-child(2) .button, .mainmenu .menugroup:nth-child(1) .button:focus, .mainmenu .menugroup:nth-child(2) p:nth-child(1) .button:focus, .mainmenu .menugroup:nth-child(2) p:nth-child(2) .button:focus, .mainmenu .menugroup:nth-child(2) p:nth-child(3) .button:focus, .mainmenu .menugroup:nth-child(3) p:nth-child(1) .button:focus, .mainmenu .menugroup:nth-child(3) p:nth-child(2) .button:focus
+  {
     border: 1px solid #4C5081;
     background: transparent -moz-linear-gradient(center top , #7CAAC3, #526180);
     background: linear-gradient(to bottom,hsl(201, 37%, 63%),hsl(220, 22%, 41%));
     text-shadow: 0px -1px 0px #4C5081;
   }
-  
-  .mainmenu .menugroup:nth-child(1) .button:hover, .mainmenu .menugroup:nth-child(2) p:nth-child(1) .button:hover, .mainmenu .menugroup:nth-child(2) p:nth-child(2) .button:hover, .mainmenu .menugroup:nth-child(2) p:nth-child(3) .button:hover, .mainmenu .menugroup:nth-child(3) p:nth-child(1) .button:hover, .mainmenu .menugroup:nth-child(3) p:nth-child(2) .button:hover {
+
+  .mainmenu .menugroup:nth-child(1) .button:hover, .mainmenu .menugroup:nth-child(2) p:nth-child(1) .button:hover, .mainmenu .menugroup:nth-child(2) p:nth-child(2) .button:hover, .mainmenu .menugroup:nth-child(2) p:nth-child(3) .button:hover, .mainmenu .menugroup:nth-child(3) p:nth-child(1) .button:hover, .mainmenu .menugroup:nth-child(3) p:nth-child(2) .button:hover
+  {
     border: 1px solid #F26330;
     background: transparent -moz-linear-gradient(center top , #EECC49, #F6AB52);
     background: linear-gradient(to bottom,hsl(48, 83%, 61%),hsl(33, 90%, 64%));
     text-shadow: 0px -1px 0px #F26330;
   }
-  
-  .menugroup .button.disabled, .menugroup .button.disabled:hover, .menugroup .button.disabled:active {
+
+  .menugroup .button.disabled, .menugroup .button.disabled:hover, .menugroup .button.disabled:active
+  {
     border: 1px solid #4C5081;
     background: #526180;
     text-shadow: 0px -1px 0px #4C5081;
     color: #FFF;
   }
-  
-  .select {
+
+  .select
+  {
     border-color: #000;
     color: #252525;
     background: rgba(255, 255, 255, 0.9);
     text-shadow: none;
   }
-  
-  .select:hover {
+
+  .select:hover
+  {
     border-color: #000;
     color: #252525;
     background: rgba(255, 255, 255, 1);
   }
-  
-  .select:disabled, .select:disabled:hover {
+
+  .select:disabled, .select:disabled:hover
+  {
     border-color: #000;
     background: rgba(255, 255, 255, 0.5);
   }
-  
-  .mainmenufooter {
+
+  .mainmenufooter
+  {
     padding: 10px;
     border: 1px solid #000;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 20px;
     color: #F6AB52;
   }
-  
-  .mainmenufooter a {
+
+  .mainmenufooter a
+  {
     color: #F6AB52;
   }
-  
-  .mainmenufooter a:hover {
+
+  .mainmenufooter a:hover
+  {
     color: #EECC49;
   }
-  
-  .pm-window h3 {
+
+  .pm-window h3
+  {
     background: transparent -moz-linear-gradient(center top , #F6F6F6, #E3E3E3);
     background: linear-gradient(to bottom,hsl(0, 0%, 96%),hsl(0, 0%, 89%));
     border-color: #000;
     color: #000;
   }
-  
-  .pm-window h3:hover, .pm-window.focused h3, .pm-window.focused h3:hover {
+
+  .pm-window h3:hover, .pm-window.focused h3, .pm-window.focused h3:hover
+  {
     background: #E3E3E3;
     border-color: #000;
     color: #000;
   }
-  
-  .pm-window h3.pm-notifying {
+
+  .pm-window h3.pm-notifying
+  {
     border: 1px solid #F26330;
     background: transparent -moz-linear-gradient(center top , #EECC49, #F6AB52);
     background: linear-gradient(to bottom,hsl(48, 83%, 61%),hsl(33, 90%, 64%));
@@ -198,46 +242,55 @@
     color: #FFF;
   }
 
-  .pm-window h3.pm-notifying:hover {
+  .pm-window h3.pm-notifying:hover
+  {
     background: #F6AB52;
     border-color: #F26330;
     color: #FFF;
     text-shadow: 0px -1px 0px #F26330;
   }
-  
-  .pm-log, .pm-window.focused .pm-log {
+
+  .pm-log, .pm-window.focused .pm-log
+  {
     border-color: #000;
   }
-  
-  .pm-log-add, .pm-window.focused .pm-log-add {
+
+  .pm-log-add, .pm-window.focused .pm-log-add
+  {
     border-color: #000;
     background: transparent -moz-linear-gradient(center top , #F6F6F6, #E3E3E3);
     background: linear-gradient(to bottom,hsl(0, 0%, 96%),hsl(0, 0%, 89%));
   }
-  
-  .pm-log-add .textbox {
+
+  .pm-log-add .textbox
+  {
     border-color: #000;
   }
-  
-  .pm-log-add .textbox:focus {
+
+  .pm-log-add .textbox:focus
+  {
     border: 1px solid #000;
     box-shadow: none;
   }
-  
-  .message-pm {
+
+  .message-pm
+  {
     color: #000;
     font-style: italic;
   }
-  
-  .pm-window.news-embed {
+
+  .pm-window.news-embed
+  {
     opacity: 0.6;
   }
-  
-  .pm-window.news-embed:hover {
+
+  .pm-window.news-embed:hover
+  {
     opacity: 0.95;
   }
-  
-  .challenge {
+
+  .challenge
+  {
     border-color: #000;
     background: #F3BC54;
     color: #000;
@@ -251,67 +304,81 @@
   * Room CSS *
   ***********/
   
-  .userlist {
+  .userlist
+  {
     background: rgba(255, 255, 255, 0.5);
     border-color: #000;
   }
-  
-  .userlist li {
+
+  .userlist li
+  {
     background: rgba(255, 255, 255, 0.5);
     border-color: #000;
   }
-  
-  .userlist li em.group {
+
+  .userlist li em.group
+  {
     color: #222;
   }
-  
-  .userlist li button:hover {
+
+  .userlist li button:hover
+  {
     background: #F9F9F9;
   }
-  
-  .chat-log-add {
+
+  .chat-log-add
+  {
     background: rgba(255, 255, 255, 0.5);
     border-color: #000;
   }
-  
-  .chat-log-add .textbox {
+
+  .chat-log-add .textbox
+  {
     border-color: #000;
   }
-  
-  .chat-log {
+
+  .chat-log
+  {
     background: rgba(255, 255, 255, 0.7);
   }
-  
-  .highlighted {
+
+  .highlighted
+  {
     background: #FFB2B2 !important;
   }
-  
-  .chat-log .chat em {
-    padding: 5px;    
+
+  .chat-log .chat em
+  {
+    padding: 5px;
   }
-  
-  .chat-log .chat {
+
+  .chat-log .chat
+  {
     margin: 3px;
     background: rgba(255, 255, 255, 0.1);
   }
-  
-  .message small {
+
+  .message small
+  {
     color: #222 !important;
   }
-  
-  .infobox {
+
+  .infobox
+  {
     border-color: #000;
     background: rgba(255, 255, 255, 0.7);
   }
-  
-  .ps-room.ps-room-light.scrollable {
+
+  .ps-room.ps-room-light.scrollable
+  {
     background: rgba(255, 255, 255, 0.5);
     background-size: cover;
     color: #000;
     text-shadow: 0px 1px 0px #FFF;
   }
-  
-  .roomlist a.ilink {
+
+  .roomlist a.ilink
+  {
     border-color: #000;
     color: #252525;
     box-shadow: 0px 0px 5px #D5D5D5;
@@ -319,52 +386,62 @@
     text-shadow: none;
   }
 
-  .roomlist a.ilink:hover {
+  .roomlist a.ilink:hover
+  {
     border-color: #000;
     color: #252525;
     background: rgba(255, 255, 255, 1);
   }
-  
-  .roomlist a.ilink small {
+
+  .roomlist a.ilink small
+  {
     color: #252525;
   }
-  
-  .tournament-title {
+
+  .tournament-title
+  {
     background: rgba(255, 255, 255, 0.5);
   }
-  
-  .tournament-status, .tournament-toggle {
+
+  .tournament-status, .tournament-toggle
+  {
     background: transparent -moz-linear-gradient(center top , #F6F6F6, #E3E3E3);
     background: linear-gradient(to bottom,hsl(0, 0%, 96%),hsl(0, 0%, 89%));
     border-right: 1px solid #000;
     color: #000;
   }
-  
-  .tournament-toggle {
+
+  .tournament-toggle
+  {
     border-left: 1px solid #000;
   }
-  
-  .tournament-box {
+
+  .tournament-box
+  {
     border-bottom: 1px solid #000;
     border-right: 1px solid #000;
     background-color: rgba(242, 247, 250, 0.85);
-  } 
-  
-  .tournament-bracket {
+  }
+
+  .tournament-bracket
+  {
     border-top: 1px solid #000;
   }
-  
-  .ladder table, .ladder td, .ladder th {
+
+  .ladder table, .ladder td, .ladder th
+  {
     border-color: #000;
     text-shadow: none;
   }
-  
-  .ladder th {
+
+  .ladder th
+  {
     background: transparent -moz-linear-gradient(center top , #F6F6F6, #E3E3E3);
     background: linear-gradient(to bottom,hsl(0, 0%, 96%),hsl(0, 0%, 89%));
   }
-  
-  .ladder td {
+
+  .ladder td
+  {
     background: rgba(255, 255, 255, 0.4);
   }
   
@@ -376,125 +453,149 @@
   * Teambuider CSS *
   *****************/
   
-  ul li button {
+  ul li button
+  {
     margin-bottom: 1px;
   }
-  
-  .teamchartbox {
+
+  .teamchartbox
+  {
     border-top: 1px solid #000;
     background: rgba(255, 255, 255, 0.5);
   }
-  
-  .ps-room.ps-room-light .textbox {
+
+  .ps-room.ps-room-light .textbox
+  {
     border: 1px solid #000;
     box-shadow: none;
   }
-  
-  .teamchart li.format-select select {
+
+  .teamchart li.format-select select
+  {
     border: 1px solid #000;
   }
-  
-  .setmenu {
+
+  .setmenu
+  {
     top: 3px;
   }
-  
-  .setmenu button:hover {
+
+  .setmenu button:hover
+  {
     background: #E3E3E3;
     border-color: #000;
   }
-  
-  .setchart, .setchart-nickname {
+
+  .setchart, .setchart-nickname
+  {
     border: 1px solid #000;
     background: transparent -moz-linear-gradient(center top , #F6F6F6, #E3E3E3);
     background: linear-gradient(to bottom,hsl(0, 0%, 96%),hsl(0, 0%, 89%));
   }
-  
-  .setchart input, .setchart-nickname input, .statform input.inputform, .setdetails, .setstats, .setchart input:hover, .setchart-nickname input:hover, .statform input.inputform:hover, .setdetails:hover, .setstats:hover, .setchart input:focus, .setchart-nickname input:focus, .statform input.inputform:focus, .setdetails:focus, .setstats:focus {
+
+  .setchart input, .setchart-nickname input, .statform input.inputform, .setdetails, .setstats, .setchart input:hover, .setchart-nickname input:hover, .statform input.inputform:hover, .setdetails:hover, .setstats:hover, .setchart input:focus, .setchart-nickname input:focus, .statform input.inputform:focus, .setdetails:focus, .setstats:focus
+  {
     border: 1px solid #000;
     box-shadow: none;
   }
-  
-  .setchart label, .setchart-nickname label {
+
+  .setchart label, .setchart-nickname label
+  {
     color: #000;
     text-shadow: none;
   }
-  
-  .teambuilder-results h3, .teambuilder-results .utilichart h3 {
+
+  .teambuilder-results h3, .teambuilder-results .utilichart h3
+  {
     border-color: #000;
     background: transparent -moz-linear-gradient(center top , #F6F6F6, #E3E3E3);
     background: linear-gradient(to bottom,hsl(0, 0%, 96%),hsl(0, 0%, 89%));
     color: #000;
     text-shadow: none;
   }
-  
-  .utilichart {
+
+  .utilichart
+  {
     text-shadow: none;
   }
-  
-  .teambuilder-results .firstresult a, .teambuilder-results .firstresult a:hover, .teambuilder-results .result a:hover {
+
+  .teambuilder-results .firstresult a, .teambuilder-results .firstresult a:hover, .teambuilder-results .result a:hover
+  {
     background: #EEE;
     border-color: #000;
   }
-  
-  .utilichart b {
+
+  .utilichart b
+  {
     color: #5F769D;
   }
-  
-  .teambar button {
+
+  .teambar button
+  {
     background: transparent -moz-linear-gradient(center top , #F6F6F6, #E3E3E3);
     background: linear-gradient(to bottom,hsl(0, 0%, 96%),hsl(0, 0%, 89%));
     border-color: #000;
   }
-  
-  .teambar button:hover {
+
+  .teambar button:hover
+  {
     background: #E3E3E3;
     border-color: #000;
   }
-  
-  .teambar button:disabled, .teambar button:disabled:hover, .teambar button:disabled:active {
+
+  .teambar button:disabled, .teambar button:disabled:hover, .teambar button:disabled:active
+  {
     background: #E3E3E3;
     border-color: #000;
   }
   
   /* #999 */
   
-  .utilichart .labelcol em, .utilichart .widelabelcol em, .utilichart .pplabelcol em, .utilichart .statcol em, .utilichart .bstcol em {
+  .utilichart .labelcol em, .utilichart .widelabelcol em, .utilichart .pplabelcol em, .utilichart .statcol em, .utilichart .bstcol em
+  {
     color: #666;
   }
   
   /* #777 */
   
-  .utilichart .itemdesccol, .utilichart .abilitydesccol, .utilichart .movedesccol {
+  .utilichart .itemdesccol, .utilichart .abilitydesccol, .utilichart .movedesccol
+  {
     color: #444;
   }
   
   /* #444 */
   
-  .utilichart .col {
+  .utilichart .col
+  {
     color: #222;
   }
-  
-  .utilichart .illegalcol em {
+
+  .utilichart .illegalcol em
+  {
     border: 1px solid #CD2B2B;
     color: #CD2B2B;
   }
-  
-  .teambuilder-clipboard-data, .teambuilder-clipboard-data:hover {
+
+  .teambuilder-clipboard-data, .teambuilder-clipboard-data:hover
+  {
     background: transparent -moz-linear-gradient(center top , #F6F6F6, #E3E3E3);
     background: linear-gradient(to bottom,hsl(0, 0%, 96%),hsl(0, 0%, 89%));
     border-color: #000;
   }
-  
-  .teambuilder-clipboard-data .section {
+
+  .teambuilder-clipboard-data .section
+  {
     border-color: #000;
   }
-  
-  .teambuilder-clipboard-title {
+
+  .teambuilder-clipboard-title
+  {
     text-shadow: none;
     text-decoration: underline;
   }
-  
-  .teambuilder-clipboard-container {
+
+  .teambuilder-clipboard-container
+  {
     border-color: #F26130;
   }
   
@@ -506,93 +607,110 @@
   * Battle CSS *
   *************/
 
-  .controls {
+  .controls
+  {
     background: rgba(255, 255, 255, 0.5);
     color: #000;
     text-shadow: 0px 0px 1px #FFF;
   }
-  
-  .battle-log {
+
+  .battle-log
+  {
     background: transparent;
     border-left: none;
     color: #000;
     text-shadow: 0px 0px 1px #FFF;
   }
-  
-  .battle-log .chat strong {
+
+  .battle-log .chat strong
+  {
     color: #000;
   }
-  
-  .battle-log .chat em {
+
+  .battle-log .chat em
+  {
     color: #000;
     text-shadow: none;
     border: 1px solid #000;
     background: #EEE;
   }
-  
-  .battle-log .chat small {
+
+  .battle-log .chat small
+  {
     color: #444;
     text-shadow: none;
   }
-  
-  em[style="color:#445566;display:block;"] {
+
+  em[style="color:#445566;display:block;"]
+  {
     color: #000 !important;
     text-shadow: 0px 0px 3px #000;
     font-style: italic !important;
   }
-  
-  .battle-log h2 {
+
+  .battle-log h2
+  {
     border-color: #000;
     border-left: 1px solid #000;
     background: rgba(255, 255, 255, 0.3);
   }
-  
-  .battle-log-add {
+
+  .battle-log-add
+  {
     background: transparent;
   }
-  
-  .battle-log-add .textbox {
+
+  .battle-log-add .textbox
+  {
     border-color: #000;
   }
-  
-  .battle-log-add {
+
+  .battle-log-add
+  {
     border-top-left-radius: 5px;
     border: none;
     text-shadow: none;
   }
-  
-  .battle-log .rated strong {
+
+  .battle-log .rated strong
+  {
     background: #000;
     text-shadow: none;
   }
-  
-  .battle-controls .whatdo {
+
+  .battle-controls .whatdo
+  {
     color: #212121;
   }
-  
-  .message-error {
+
+  .message-error
+  {
     color: #922;
     border: 1px solid #000;
     background: #EEE;
     margin-top: 1px;
-    padding-left: 5px !important;    
+    padding-left: 5px !important;
   }
-  
-  .messagebar {
+
+  .messagebar
+  {
     background: #EEE;
     color: #000;
     border: 1px solid #000;
   }
-  
-  .moveselect button, .switchselect button {
+
+  .moveselect button, .switchselect button
+  {
     color: #212121;
   }
-  
-  .chat small {
+
+  .chat small
+  {
     color: #454545;
   }
-  
-  .ps-room.ps-room-opaque {
+
+  .ps-room.ps-room-opaque
+  {
     background: rgba(255, 255, 255, 0.5);
     color: #000;
     text-shadow: none;
@@ -601,7 +719,8 @@
   
   /* Battle Background */
 
-  .backdrop {
+  .backdrop
+  {
     width: 640px;
     height: 360px;
     position: absolute;
@@ -611,8 +730,9 @@
     background: -50px -90px;
     opacity: 1 !important;
   }
-  
-  .backdrop:before{
+
+  .backdrop:before
+  {
     display: block;
     content: "";
     background: url("http://www.spacewallpapershd.com/wp-content/uploads/2015/01/space_view_of_the_earth_hd_wallpaper_for_android_.jpg");
@@ -627,11 +747,13 @@
   * Leftbar/Rigthbar *
   *******************/
 
-  .rightbar {
+  .rightbar
+  {
     border-color: rgba(215,215,215,0.5);
   }
 
-  .leftbar {
+  .leftbar
+  {
     border-color: rgba(215,215,215,0.5);
   }
 
@@ -643,43 +765,51 @@
   * Battle Weather *
   *****************/
 
-  .weather {
-    text-shadow:none;
+  .weather
+  {
+    text-shadow: none;
     color: rgba(0,0,0,0);
   }
 
-  .weather em small {
+  .weather em small
+  {
     font-size: 7pt;
     color: white;
     text-shadow: 1px 1px black;
     position: absolute;
-    left:0;
+    left: 0;
     top: 85px;
     width: 95px;
-    text-align:center;
+    text-align: center;
   }
 
-  .sunweather, .sunnydayweather, .desolatelandweather {
+  .sunweather, .sunnydayweather, .desolatelandweather
+  {
     background: url(http://i.imgur.com/DNMtOWR.gif) scroll left top;
   }
 
-  .rainweather, .raindanceweather, .primordialseaweather {
+  .rainweather, .raindanceweather, .primordialseaweather
+  {
     background: url(http://i.imgur.com/NQqkU6j.gif) scroll left top;
   }
-  
-  .deltastreamweather {
+
+  .deltastreamweather
+  {
     background: url(http://i.imgur.com/OEB3hum.gif) scroll left top;
   }
 
-  .hailweather {
+  .hailweather
+  {
     background: url(http://i.imgur.com/PweinWm.gif) scroll left top;
   }
 
-  .sandstormweather {
+  .sandstormweather
+  {
     background: url(http://i.imgur.com/OEB3hum.gif) scroll left top;
   }
 
-  .pseudoweather {
+  .pseudoweather
+  {
     background: url(http://play.pokemonshowdown.com/fx/weather-trickroom.png) scroll left top;
   }
   
@@ -687,32 +817,39 @@
   * Battle Weather ~end *
   **********************/
   
-  .messagebar {
+  .messagebar
+  {
     z-index: 10;
   }
 
-  .foehint div {
+  .foehint div
+  {
     z-index: 11;
   }
 
-  .battle-controls {
+  .battle-controls
+  {
     background: rgba(51,51,51,0.7);
   }
 
-  .whatdo .healthy {
+  .whatdo .healthy
+  {
     position: absolute;
     right: 8px;
   }
 
-  .movecontrols {
+  .movecontrols
+  {
     float: left;
   }
 
-  .movemenu {
+  .movemenu
+  {
     width: 302px;
   }
 
-  .movemenu button {
+  .movemenu button
+  {
     width: 150px;
     height: 50px;
     border-radius: 25px;
@@ -726,113 +863,139 @@
     margin-bottom: 2px;
   }
 
-  .movemenu button:hover {
+  .movemenu button:hover
+  {
     top: -2px;
   }
 
-  .movemenu button small {
+  .movemenu button small
+  {
     text-align: center;
     width: 62px;
     margin-top: 0px;
   }
 
-  .movemenu button small.type {
+  .movemenu button small.type
+  {
     display: none;
   }
 
-  .movemenu button small.pp {
+  .movemenu button small.pp
+  {
     padding: 6px 0px 2px;
     color: white;
     font-size: 8pt;
     text-shadow: none;
   }
 
-  .movemenu button small.pp:before {
+  .movemenu button small.pp:before
+  {
     content: 'PP ';
   }
 
-  .movemenu button.type-Normal, .movemenu button.type-Normal:hover {
+  .movemenu button.type-Normal, .movemenu button.type-Normal:hover
+  {
     background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -150px -50px !important;
   }
 
-  .movemenu button.type-Fire, .movemenu button.type-Fire:hover {
+  .movemenu button.type-Fire, .movemenu button.type-Fire:hover
+  {
     background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll 0px -50px !important;
   }
 
-  .movemenu button.type-Water, .movemenu button.type-Water:hover {
+  .movemenu button.type-Water, .movemenu button.type-Water:hover
+  {
     background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -450px -150px !important;
   }
 
-  .movemenu button.type-Electric, .movemenu button.type-Electric:hover {
+  .movemenu button.type-Electric, .movemenu button.type-Electric:hover
+  {
     background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll 0px 0px !important;
   }
 
-  .movemenu button.type-Grass, .movemenu button.type-Grass:hover {
+  .movemenu button.type-Grass, .movemenu button.type-Grass:hover
+  {
     background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -450px -100px !important;
   }
 
-  .movemenu button.type-Ice, .movemenu button.type-Ice:hover {
+  .movemenu button.type-Ice, .movemenu button.type-Ice:hover
+  {
     background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -150px 0px !important;
   }
 
-  .movemenu button.type-Fighting, .movemenu button.type-Fighting:hover {
+  .movemenu button.type-Fighting, .movemenu button.type-Fighting:hover
+  {
     background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -150px -150px !important;
   }
 
-  .movemenu button.type-Poison, .movemenu button.type-Poison:hover {
+  .movemenu button.type-Poison, .movemenu button.type-Poison:hover
+  {
     background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -450px 0px !important;
   }
 
-  .movemenu button.type-Ground, .movemenu button.type-Ground:hover {
+  .movemenu button.type-Ground, .movemenu button.type-Ground:hover
+  {
     background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll 0px -150px !important;
   }
 
-  .movemenu button.type-Flying, .movemenu button.type-Flying:hover {
+  .movemenu button.type-Flying, .movemenu button.type-Flying:hover
+  {
     background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -300px -50px !important;
   }
 
-  .movemenu button.type-Psychic, .movemenu button.type-Psychic:hover {
+  .movemenu button.type-Psychic, .movemenu button.type-Psychic:hover
+  {
     background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -300px 0px !important;
   }
 
-  .movemenu button.type-Bug, .movemenu button.type-Bug:hover {
+  .movemenu button.type-Bug, .movemenu button.type-Bug:hover
+  {
     background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll 0px -100px !important;
   }
 
-  .movemenu button.type-Rock, .movemenu button.type-Rock:hover {
+  .movemenu button.type-Rock, .movemenu button.type-Rock:hover
+  {
     background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -150px -200px !important;
   }
 
-  .movemenu button.type-Ghost, .movemenu button.type-Ghost:hover {
+  .movemenu button.type-Ghost, .movemenu button.type-Ghost:hover
+  {
     background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -450px -50px !important;
   }
 
-  .movemenu button.type-Dragon, .movemenu button.type-Dragon:hover {
+  .movemenu button.type-Dragon, .movemenu button.type-Dragon:hover
+  {
     background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -300px -150px !important;
   }
 
-  .movemenu button.type-Dark, .movemenu button.type-Dark:hover {
+  .movemenu button.type-Dark, .movemenu button.type-Dark:hover
+  {
     background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -150px -100px !important;
   }
 
-  .movemenu button.type-Steel, .movemenu button.type-Steel:hover {
+  .movemenu button.type-Steel, .movemenu button.type-Steel:hover
+  {
     background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll 0px -200px !important;
   }
 
-  .movemenu button.type-Fairy, .movemenu button.type-Fairy:hover {
+  .movemenu button.type-Fairy, .movemenu button.type-Fairy:hover
+  {
     background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -300px -100px !important;
   }
 
-  .movemenu button.type-undefined, .movemenu button.type-undefined:hover {
+  .movemenu button.type-undefined, .movemenu button.type-undefined:hover
+  {
     background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -300px -200px !important;
   }
 
-  .movemenu button:disabled {
+  .movemenu button:disabled
+  {
     background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -300px -200px !important;
     opacity: .5;
   }
 
-  .movemenu label {
+  .movemenu label
+  {
     width: 85px;
     text-align: center;
     font-size: 0;
@@ -841,43 +1004,51 @@
     right: 250px;
   }
 
-  .movemenu label input {
+  .movemenu label input
+  {
     position: relative;
     top: 1px;
   }
 
-  .movemenu label:after {
+  .movemenu label:after
+  {
     content: " Mega evolution";
     font-size: 11pt;
     color: #000;
   }
 
-  .shiftselect {
+  .shiftselect
+  {
     float: left;
     padding-left: 13px;
     width: 72px;
   }
 
-  .switchcontrols {
+  .switchcontrols
+  {
     float: left;
   }
-  
-  .switchselect button {
+
+  .switchselect button
+  {
     text-shadow: 0px 0px 1px #EEE;
     color: #151515;
     box-shadow: none;
   }
 
-  .movecontrols ~ .switchcontrols {
+  .movecontrols ~ .switchcontrols
+  {
     float: right;
   }
 
-  .switchselect ~ .switchmenu {
+  .switchselect ~ .switchmenu
+  {
     width: 248px;
     margin: 0px;
   }
 
-  .switchmenu button, .switchmenu button:hover, .switchmenu button.disabled {
+  .switchmenu button, .switchmenu button:hover, .switchmenu button.disabled
+  {
     border: 1px solid black !important;
     box-shadow: none;
     font-size: 8pt;
@@ -891,23 +1062,28 @@
     margin: 1px;
   }
 
-  .switchmenu:nth-child(2) button, .switchmenu:nth-child(2) button:hover, .switchmenu:nth-child(2) button:disabled {
+  .switchmenu:nth-child(2) button, .switchmenu:nth-child(2) button:hover, .switchmenu:nth-child(2) button:disabled
+  {
     background: linear-gradient(#71231e, #84261d 49%, #541812 51%, #99201a) !important;
   }
 
-  .switchmenu:nth-child(3) button, .switchmenu:nth-child(3) button:hover, .switchmenu:nth-child(3) button:disabled {
+  .switchmenu:nth-child(3) button, .switchmenu:nth-child(3) button:hover, .switchmenu:nth-child(3) button:disabled
+  {
     background: linear-gradient(#246e3f, #2d8f54 49%, #165029 51%, #39a161) !important;
   }
 
-  .switchmenu button .pokemonicon {
+  .switchmenu button .pokemonicon
+  {
     margin: -4px 10px;
   }
 
-  .switchmenu button .hpbar, .switchmenu button .status {
+  .switchmenu button .hpbar, .switchmenu button .status
+  {
     display: none;
   }
 
-  .switchselect ~ .switchmenu button, .switchselect ~ .switchmenu button:hover, .switchselect ~ .switchmenu button:disabled {
+  .switchselect ~ .switchmenu button, .switchselect ~ .switchmenu button:hover, .switchselect ~ .switchmenu button:disabled
+  {
     background: linear-gradient(#40aa40, #70dd70 30%, #159040 80%, #208020) !important;
     background: -moz-linear-gradient(#40aa40, #70dd70 30%, #159040 80%, #208020) !important;
     border-radius: 15px;
@@ -917,40 +1093,48 @@
     width: 122px;
   }
 
-  .switchselect ~ .switchmenu button .pokemonicon {
+  .switchselect ~ .switchmenu button .pokemonicon
+  {
     margin: -4px 0;
   }
 
-  .switchselect ~ .switchmenu button .status {
+  .switchselect ~ .switchmenu button .status
+  {
     display: block;
   }
 
-  .switchselect ~ .switchmenu button .hpbar {
+  .switchselect ~ .switchmenu button .hpbar
+  {
     display: block;
     border-color: #333333;
     width: 92px;
     margin-left: 11px;
   }
 
-  .switchselect ~ .switchmenu button .status {
+  .switchselect ~ .switchmenu button .status
+  {
     position: relative;
     left: 106px;
   }
 
-  .switchmenu button:hover {
+  .switchmenu button:hover
+  {
     top: -2px;
   }
 
-  .switchmenu button:disabled {
+  .switchmenu button:disabled
+  {
     top: 0px;
     opacity: .5;
   }
 
-  .movecontrols, .shiftselect, .switchcontrols {
+  .movecontrols, .shiftselect, .switchcontrols
+  {
     z-index: 12;
   }
 
-  .moveselect button, .shiftselect button, .switchselect button {
+  .moveselect button, .shiftselect button, .switchselect button
+  {
     background: rgba(0,0,0,0) !important;
     box-shadow: none;
     text-shadow: 0px 0px 1px #EEE;
@@ -961,7 +1145,8 @@
   
   /* Health, State, Info bar */
   
-  .statbar {
+  .statbar
+  {
     position: absolute;
     display: none;
     width: 186px;
@@ -971,8 +1156,9 @@
     min-height: 40px;
     padding: 2px 4px 2px 26px;
   }
-  
-  .statbar strong {
+
+  .statbar strong
+  {
     position: absolute;
     left: 30px;
     top: 6px;
@@ -983,13 +1169,15 @@
     color: #FFF;
     text-shadow: #000 1px 1px 0, #000 1px -1px 0, #000 -1px 1px 0, #000 -1px -1px 0;
   }
-  
-  .statbar strong small {
-      font-size: 9px;
+
+  .statbar strong small
+  {
+    font-size: 9px;
     font-weight: normal;
   }
-  
-  .statbar .hpbar {
+
+  .statbar .hpbar
+  {
     position: relative;
     border: 1px solid #131313;
     background: #FCFEFF;
@@ -997,51 +1185,60 @@
     margin: 0 0 0 0;
     width: 151px;
     border-radius: 0px;
-      padding: 0;
-      top: -2px;
+    padding: 0;
+    top: -2px;
   }
-  
-  .hptextborder {
-    display:none !important;
+
+  .hptextborder
+  {
+    display: none !important;
   }
-  
-  .statbar .hpbar .hp {
+
+  .statbar .hpbar .hp
+  {
     height: 3px;
     border-top: 1px solid #007734;
     background: #00bb51;
     border-bottom: 2px solid #007734;
     border-radius: 0px;
   }
-  
-  .statbar .hpbar .hp-yellow {
+
+  .statbar .hpbar .hp-yellow
+  {
     background-color: #f5d538;
     border-color: #be9f0a;
   }
-  
-  .statbar .hpbar .hp-red {
+
+  .statbar .hpbar .hp-red
+  {
     background-color: #ee4928;
     border-color: #a3260d;
   }
 
-  .statbar .hpbar .prevhp {
+  .statbar .hpbar .prevhp
+  {
     background: #BBEECC;
     height: 6px;
     border-radius: 0px;
   }
-  
-  .statbar .hpbar .prevhp-yellow {
+
+  .statbar .hpbar .prevhp-yellow
+  {
     background-color: #fcf4ca;
   }
-  
-  .statbar .hpbar .prevhp-red {
+
+  .statbar .hpbar .prevhp-red
+  {
     background-color: #facec5;
   }
 
-  .hptext {
-    margin-top: 2px;  
+  .hptext
+  {
+    margin-top: 2px;
   }
 
-  .statbar .hpbar .hptext {
+  .statbar .hpbar .hptext
+  {
     position: absolute;
     color: #FFFFFF;
     text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
@@ -1051,31 +1248,35 @@
     top: -1px;
     text-align: center;
   }
-  
-  .rstatbar .hpbar .hptext {
+
+  .rstatbar .hpbar .hptext
+  {
     width: 40px;
     height: 15px;
-    background:url(http://i.imgur.com/1oaSYb8.png);
+    background: url(http://i.imgur.com/1oaSYb8.png);
     right: -42px;
     border-radius: 0 4px 4px 0;
   }
-  
-  .lstatbar .hpbar .hptext {
+
+  .lstatbar .hpbar .hptext
+  {
     width: 35px;
     height: 15px;
-    background:url(http://i.imgur.com/iAy0D88.png);
+    background: url(http://i.imgur.com/iAy0D88.png);
     left: -55px;
     border-radius: 4px 0 0 4px;
     padding-left: 2px;
   }
 
-  .statbar .status {
-    margin-top:15px;
+  .statbar .status
+  {
+    margin-top: 15px;
     min-height: 10px;
     font-size: 7pt;
   }
 
-  .statbar span.brn, .statbar span.psn, .statbar span.slp, .statbar span.par, .statbar span.frz {
+  .statbar span.brn, .statbar span.psn, .statbar span.slp, .statbar span.par, .statbar span.frz
+  {
     position: absolute;
     left: -21px;
     top: 10px;
@@ -1084,20 +1285,23 @@
     border: 0;
     border-radius: 3px;
   }
-  
-  .statbar span.bad {
+
+  .statbar span.bad
+  {
     background: #e74c3c;
     color: #ecf0f1;
     border-color: #c0392b;
   }
-  
-  .statbar span.good {
+
+  .statbar span.good
+  {
     background: #27ae60;
     color: #ecf0f1;
     border-color: #067A37;
   }
-  
-  .statbar span.neutral {
+
+  .statbar span.neutral
+  {
     background: #7f8c8d;
     color: #ecf0f1;
     border: 1px solid #2c3e50;
@@ -1105,35 +1309,42 @@
   
   /* Health, State, Info bar ~end */
 
-  .pfx-panel {
-    background: rgba(0, 0, 0, 0.5); 
+  .pfx-panel
+  {
+    background: rgba(0, 0, 0, 0.5);
   }
 
-  .pfx-topbar {
+  .pfx-topbar
+  {
     background: rgba(0, 0, 0, 0.5);
     border-bottom-color: #87C1F2;
   }
 
-  .replay-wrapper .battle-log {
+  .replay-wrapper .battle-log
+  {
     height: 410px;
     top: -35px;
-  }      
-
-  .replay-wrapper {
-    top: 40px;          
   }
-  
-  .jslider .jslider-value {
+
+  .replay-wrapper
+  {
+    top: 40px;
+  }
+
+  .jslider .jslider-value
+  {
     color: #000;
     text-shadow: 0px 0px 1px #DDD;
   }
-  
-  .jslider .jslider-label {
+
+  .jslider .jslider-label
+  {
     opacity: 0.8;
     text-shadow: 0px 0px 1px #AB8995;
   }
-  
-  #tooltipwrapper {
+
+  #tooltipwrapper
+  {
     z-index: 1000;
   }
   
@@ -1141,9 +1352,10 @@
   * Battle CSS ~end *
   ******************/
 
-  .ps-room .battle-controls {
+  .ps-room .battle-controls
+  {
     background: transparent !important;
   }
   
-/*** Charles Paroissien ***/
+/*** Charles Paroissien ***/;
 }
