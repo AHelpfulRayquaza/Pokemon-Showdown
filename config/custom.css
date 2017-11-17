@@ -1,14 +1,5 @@
 
-
-  #looby-userlist-user-ahelpfulrayquaza, #staff-userlist-user-ahelpfulrayquaza, #shadowbanroom-userlist-user-ahelpfulrayquaza, #tournament-userlist-user-ahelpfulrayquaza, #skytower-userlist-user-ahelpfulrayquaza { 
-    background: rgba(244, 244, 244, 0.8) url("http://img3.wikia.nocookie.net/__cb20131226040239/es.pokemon/images/5/57/Rayquaza_icon.png") right no-repeat;
-  }
-
-  #looby-userlist-user-ahelpfulrayquaza, #staff-userlist-user-ahelpfulrayquaza, #shadowbanroom-userlist-user-ahelpfulrayquaza, #tournament-userlist-user-ahelpfulrayquaza, #skytower-userlist-user-ahelpfulrayquaza { 
-    background: rgba(244, 244, 244, 0.8) url("http://img3.wikia.nocookie.net/__cb20131226040239/es.pokemon/images/5/57/Rayquaza_icon.png") right no-repeat;
-  }
-  @-moz-document domain("play.pokemonshowdown.com"), domain("psim.us") {
-  
+ 
   /**************
   * General CSS *
   **************/
