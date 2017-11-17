@@ -1,1586 +1,1349 @@
-  /* General CSS */
-
+  /**************
+  * General CSS *
+  **************/
+  
   body
   {
-    background-image: url("http://i66.tinypic.com/2vs0vbq.png") !important;
+    background: url("http://i.imgur.com/roQErS3.png") !important;
     background-size: cover !important;
   }
 
   .ps-room.ps-room-light
   {
-    background-color: rgba(210, 237, 249, 0.5) !important;
-    border: none !important;
-    color: #000 !important;
-    text-shadow: none !important;
-  }
-
-  .ps-room.ps-room-light.scrollable
-  {
-    background-color: rgba(210, 237, 249, 0.5)/*rgba(143, 211, 240)*/ !important;
-    color: #000 !important;
-    text-shadow: none !important;
-  }
-
-  .pad .button, .ps-room.ps-room-light.scrollable p .button
-  {
-    background: rgba(255, 255, 255, 0.8) !important;
-    border-radius: 4px;
-    border-color: rgb(0, 0, 0) !important;
-    color: #000 !important;
-    text-shadow: 0px 0px 0px !important;
-  }
-
-  .pad .button:hover, .ps-room.ps-room-light.scrollable p .button:hover
-  {
-    background: rgba(255, 102, 102, 0.8) !important;
-    font-family: Georgia, Times, 'Times New Roman', serif !important;
-    text-shadow: none !important;
-    border-color: rgb(255, 102, 102) !important;
-    color: #000;
-  }
-
-  .ps-room.ps-room-light .roomlist, .roomlisttop
-  {
-    width: 100%;
-    max-width: 100% !important;
-    color: #000 !important;
-    text-shadow: none !important;
-  }
-
-  .ps-room.ps-room-light .roomlist
-  {
-    background: none !important;
-    color: #000 !important;
-    text-shadow: none !important;
-  }
-
-  .roomlist a.ilink
-  {
-    background: rgb(255, 255, 255) !important;
+    background: transparent;
     border-color: #000;
-    font-family: Georgia, Times, 'Times New Roman', serif !important;
-    border-radius: 6px;
-    text-shadow: none !important;
-    color: #000;
   }
 
-  .roomlist a.ilink:hover
+  .ps-overlay
   {
-    background: rgba(255, 102, 102, 0.8) !important;
-    border-color: #000;
-    border-radius: 6px;
-    color: #000;
-    text-shadow: 0px 0px 0px !important;
-    font-family: Georgia, Times, 'Times New Roman', serif !important;
+    background: rgba(0, 0, 0, 0.3);
   }
 
-  .roomlist a.ilink small
+  button
   {
-    text-shadow: none !important;
-    color: #000;
+    border: 1px solid #000;
   }
 
-  .roomcounters button, roomcounters button:havor
-  {
-    background: none !important;
-    border-color: #000;
-    border-radius: 4px;
-    font-family: Georgia, Times, 'Times New Roman', serif !important;
-    text-shadow: none !important;
-    color: #000 !important;
-  }
-
-  .textbox, .textbox:hover, .textbox:focus
-  {
-    background: rgba(210, 237, 255, 0.8) !important;
-    border-color: #000;
-    text-shadow: none !important;
-    color: #000 !important;
-  }
-
-  .broadcast-blue
-  {
-    background-color: rgb(210, 237, 249) !important;
-    border-left-style: solid !important;
-    border-color: #000 !important;
-    border-width: 12px !important;
-    border-right-style: solid !important;
-    border-radius: 6px !important;
-    color: #000 !important;
-    font-family: Georgia, Times, 'Times New Roman', serif !important;
-    text-shadow: none !important;
-    text-align: center;
-  }
-
-  .broadcast-blue:havor
-  {
-    background-color: rgb(255, 102, 102);
-    border-left-style: solid !important;
-    border-right-style: solid !important;
-    border-color: #000 !important;
-    border-width: 12px !important;
-    border-radius: 6px !important;
-    color: #000 !important;
-    font-family: Georgia, Times, 'Times New Roman', serif !important;
-    text-shadow: none !important;
-    text-align: center;
-  }
-
-  .broadcast-blue a
-  {
-    color: #000;
-    text-decoration: underline !important;
-  }
-
-  .broadcast-red
-  {
-    background-color: rgb(255, 102, 102) !important;
-    border-left-style: solid !important;
-    border-right-style: solid !important;
-    border-radius: 6px !important;
-    border-color: #000 !important;
-    border-width: 12px !important;
-    font-family: Georgia, Times, 'Times New Roman', serif !important;
-    text-shadow: none !important;
-    color: #000 !important;
-    text-align: center !important;
-  }
-
-  .broadcast-red a
-  {
-    color: #000 !important;
-    text-decoration: underline !important;
-  }
-
-  .broadcast-green
-  {
-    background-color: rgb(0, 153, 51) !important;
-    border-left-style: solid !important;
-    border-right-style: solid !important;
-    border-radius: 6px !important;
-    border-width: 12px !important;
-    border-color: #000 !important;
-    font-family: Georgia, Times, 'Times New Roman', serif !important;
-    text-shadow: none !important;
-    color: #000 !important;
-    text-align: center !important;
-  }
-
-  .broadcast-green a
-  {
-    color: #000 !important;
-    text-decoration: underline !important;
-  }
-
-  .hangman-blue
-  {
-    background: rgba(26, 186, 255, 0.7);
-    color: #000;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-color: #000;
-    border-width: 4px;
-  }
-
-  .hangman-green
-  {
-    background: rgb(0, 153, 51);
-    color: #000;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-color: #000;
-    border-width: 4px;
-  }
-
-  .ambush
-  {
-    background: rgba(26, 186, 255, 0.7);
-    color: #000;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-color: #000;
-    border-width: 4px;
-    text-align: center;
-  }
-
-  .hangman-red
-  {
-    background: rgba(255, 102, 102, 0.7);
-    color: #000;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-color: #000;
-    border-width: 4px;
-  }
-
-  .uno
-  {
-    background: rgba(255, 102, 102, 0.7);
-    color: #000;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-color: #000;
-    border-width: 4px;
-  }
-
-  .message-announce
-  {
-    background: rgb(210, 237, 249) !important;
-    font-family: Georgia, Times, 'Times New Roman', serif !important;
-    color: #000;
-  } 
-  
-  /* General CSS End */
-  
-  /* Header CSS */
-  
   .header
   {
-    background: rgba(210, 237, 249, 0.5) url("http://i.imgur.com/8FtRdtw.png") no-repeat !important;
-  }
-
-  .header .logo
-  {
-    opacity: 0;
+    background: rgba(255, 255, 255, 0.5);
+    background-size: cover;
   }
 
   .maintabbarbottom
   {
-    background: rgb(210, 237, 249) !important;
     border-color: #000;
+    background: #F8F8F8;
+  }
+
+  .tabbar a.button.subtle-notifying, .tabbar a.button.subtle-notifying:hover
+  {
+    color: #F58438;
   }
 
   .tabbar a.button.notifying
   {
-    background: rgba(255, 102, 102, 0.8) !important;
-    border-color: #000;
-    font-family: Georgia, Times, 'Times New Roman', serif !important;
-    color: #000 !important;
-    text-shadow: none !important;
+    border: 1px solid #F26330;
+    background: transparent -moz-linear-gradient(center top , #EECC49, #F6AB52);
+    text-shadow: 0px -1px 0px #F26330;
+    color: #FFF;
   }
 
   .tabbar a.button.notifying:hover
   {
-    background: rgba(255, 102, 102, 0.8) !important;
-    border-color: #000 !important;
-    color: #000 !important;
-    text-shadow: none !important;
-  }
-
-  .tabbar a.button.subtle-notifying
-  {
-    background: rgba(210, 237, 249, 0.8) !important;
-    border-color: #000 !important;
-    color: #000 !important;
-    font-family: Georgia, Times, 'Times New Roman', serif !important;
-    text-shadow: none !important;
+    background: #F6AB52;
+    border-color: #F26330;
+    color: #FFF;
+    text-shadow: 0px -1px 0px #F26330;
   }
 
   .tabbar a.button.cur, .tabbar a.button.cur:hover
   {
-    background: rgba(210, 237, 249, 0.8) !important;
-    border-color: #000 !important;
-    color: #000 !important;
-    font-family: Georgia, Times, 'Times New Roman', serif !important;
-    text-shadow: none !important;
-  }
-
-  .tabbar a.cur + .closebutton
-  {
-    color: #000 !important;
-  }
-
-  .tabbar a.button, .userbar button.icon
-  {
-    background: rgba(210, 237, 249) !important;
-    border-color: #000 !important;
-    font-family: Georgia, Times, 'Times New Roman', serif !important;
-    color: #000 !important;
-    text-shadow: none !important;
-  }
-
-  .tabbar .closebutton
-  {
-    color: #000;
-  }
-
-  .tabbar .closebutton:hover, .tabbar a.cur + .closebutton:hover
-  {
-    color: #000 !important;
-  }
-
-  .tabbar a.button:hover, .userbar button.icon:hover
-  {
-    background: rgba(255, 102, 102, 0.8) !important;
     border-color: #000;
     color: #000;
-    font-family: Georgia, Times, 'Times New Roman', serif !important;
-    text-shadow: none !important;
+    background: #F8F8F8;
+    text-shadow: none;
   }
 
-  .userbar .username
+  .tabbar a.button
   {
-    color: black;
-    font-family: Georgia, Times, 'Times New Roman', serif !important;
-    text-shadow: none !important;
-  } 
-  
-  /* Header CSS End */
-  
-  /* Chat CSS */
-  
-  .chat-log
-  {
-    background: rgba(255, 255, 255, 0.7) !important;
-    border-width: 0px 0px 1px 1px !important;
-    border-style: solid !important;
-    border-color: #000 !important;
-    color: #000 !important;
-    font-family: Georgia, Times, 'Times New Roman', serif !important;
-    text-shadow: none !important;
+    background: transparent -moz-linear-gradient(center top , #F6F6F6, #E3E3E3) repeat scroll 0% 0%;
   }
 
-  .chat small
+  .tabbar a.button:hover
   {
-    color: #000 !important;
+    background: transparent -moz-linear-gradient(center top , #E3E3E3, #CCC) repeat scroll 0% 0%;
   }
 
-  .infobox
-  {
-    background: rgba(245, 245, 245, 0.6) !important;
-    background-size: cover !important;
-    border-top-style: solid !important;
-    border-bottom-style: solid !important;
-    border-width: 4px !important;
-    border-color: #000 !important;
-    border-left-style: none !important;
-    border-right-style: none !important;
-    color: #000 !important;
-    font-family: Georgia, Times, 'Times New Roman', serif !important;
-    text-shadow: none !important;
-  }
-
-  .infobox a
-  {
-    color: #000 !important;
-    text-decoration: underline !important;
-  }
-
-  .infobox code
-  {
-    color: #000;
-  }
-
-  .message small
-  {
-    color: #000 !important;
-  }
-
-  .message .utilichart .result
-  {
-    background: none !important;
-    font-family: Georgia, Times, 'Times New Roman', serif !important;
-    color: black;
-    text-align: center !important;
-  }
-
-  .pm-log a.ilink, pm-log a.ilink:havor
-  {
-    color: rgb(255, 102, 102) !important;
-    font-style: bold !important;
-    font-style: underline !important;
-    font-family: Georgia, Times, 'Times New Roman', serif !important;
-  }
-
-  .chat-log a.ilink, .chat-log a.ilink:havor
-  {
-    color: rgb(255, 102, 102) !important;
-    font-style: bold !important;
-    font-style: underline !important;
-    font-family: Georgia, Times, 'Times New Roman', serif !important;
-  }
-
-  .infobox a.ilink, .infobox a.ilink:havor
-  {
-    color: rgb(255, 102, 102) !important;
-    font-style: bold !important;
-    font-style: underline !important;
-    font-family: Georgia, Times, 'Times New Roman', serif !important;
-  }
-
-  .chat.mine
-  {
-    background: transparent !important;
-  }
-
-  .message-pm
-  {
-    color: #000 !important;
-  }
-
-  .chat-log-add
+  .tabbar a.button, .tabbar a.button:hover
   {
     border-color: #000;
-    font-family: Georgia, Times, 'Times New Roman', serif !important;
-    text-shadow: none !important;
-    color: #000 !important;
+    text-shadow: none;
+    color: #252525;
   }
 
-  .chat-log-add .chatbox label
+  .ps-popup
   {
-    text-shadow: none !important;
+    background: #EEE url("http://i.imgur.com/1Np7mNE.png?2") no-repeat bottom right;
+    box-shadow: 1px 1px 0px #FFF inset, -1px -1px 0px #DDD inset, 2px 2px 3px rgba(0, 0, 0, 0.2);
+    border-color: #000;
   }
 
-  .userlist
+  .ps-popup hr
   {
-    background: rgba(210, 237, 249, 0.8) !important;
-    border-color: rgb(0, 0, 0);
-    font-family: Georgia, Times, 'Times New Roman', serif !important;
-    text-shadow: none !important;
+    border: none;
+    border-bottom: 1px solid #000;
   }
 
-  .userlist li
+  .ps-popup a
   {
-    border-color: #000 !important;
+    color: #5D7298;
   }
 
-  .userlist li span, .userlist li strong
+  .popupmenu h3, .credits h2, .credits ul
   {
-    text-shadow: none !important;
+    color: #4C8B7A;
   }
 
-  .userlist li button:hover
+  a.subtle
   {
-    background: rgba(210, 237, 259, 0.8) !important;
     color: #000;
-    border-color: #000 !important;
-    text-shadow: none !important;
   }
 
-  .userlist-count
+  a.subtle:hover
   {
-    color: #000 !important;
+    color: #151515;
   }
 
-  .userlist li em.group
+  .avatarlist button
   {
-    color: #000 !important;
-  } 
+    border-color: #000;
+  }
+
+  .avatarlist button:hover
+  {
+    border-color: #F4AB38;
+  }
   
-  /* Chat CSS End */
   
-  /* Menu CSS */
+  /*******************
+  * General CSS ~end *
+  *******************/
+  
+  /******************
+  * Mainmenuwrapper *
+  ******************/
   
   .menugroup
   {
-    background: none !important;
-    border: none !important;
-    color: #000 !important;
-    font-style: bold !important;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    text-shadow: none !important;
-  }
-
-  .menugroup button, .select, .menugroup .button.mainmenu2, .menugroup .button.mainmenu4
-  {
-    background: rgb(102, 179, 255) url("https://orig00.deviantart.net/d9b2/f/2012/316/a/c/free_bouncy_glaceon_icon_by_kattling-d5kt02m.gif") right no-repeat !important;
-    border-color: #000 !important;
-    border-top-style: solid !important;
-    border-bottom-style: solid !important;
-    border-width: 2px !important;
-    color: #000 !important;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    text-shadow: none !important;
-  }
-
-  .menugroup button:hover, .select:hover, .menugroup .button.mainmenu2:hover, .menugroup .button.mainmenu4:hover
-  {
-    background: rgb(255, 102, 102) url("https://orig00.deviantart.net/443b/f/2012/307/5/c/free_bouncy_flareon_icon_by_kattling-d5ju0kd.gif") right no-repeat !important;
-  }
-
-  .menugroup a.ilink, .menugroup a.ilink:havor
-  {
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold !important;
-    font-style: italic !important;
-    color: #000 !important;
-    text-shadow: none !important;
-  }
-
-  .select:disabled
-  {
-    background: rgb(102, 179, 255) !important;
-    border: 2px #000 !important;
-    color: #000 !important;
-    font-style: bold !important;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    text-shadow: none !important;
-  }
-
-  .select:disabled:havor
-  {
-    background: rgb(255, 102, 102) !important;
-  }
-
-  .teamselect:disabled strong
-  {
-    color: #000 !important;
-  }
-
-  .menugroup .button.mainmenu1, .menugroup .button.mainmenu3, .menugroup .button.mainmenu5
-  {
-    background: rgb(255, 102, 102) url("https://orig00.deviantart.net/443b/f/2012/307/5/c/free_bouncy_flareon_icon_by_kattling-d5ju0kd.gif") right no-repeat !important;
-    border-color: #000 !important;
-    border-top-style: solid !important;
-    border-bottom-style: solid !important;
-    border-width: 2px !important;
-    color: #000;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    text-shadow: none !important;
-  }
-
-  .menugroup .button.mainmenu1:hover, .menugroup .button.mainmenu3:hover, .menugroup .button.mainmenu5:hover
-  {
-    background: rgb(102, 179, 255) url("https://orig00.deviantart.net/d9b2/f/2012/316/a/c/free_bouncy_glaceon_icon_by_kattling-d5kt02m.gif") right no-repeat !important;
-  }
-
-  .battleform label
-  {
-    background: url("http://i.imgur.com/yFWeHx0.png") no-repeat scroll left center transparent !important;
-    padding: 4px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #000;
     color: #FFF;
-    text-align: left;
-  } 
-  
-  /* Menu CSS End */
-  
-  /* PM Box CSS */
-  
-  .pm-window h3
-  {
-    background: rgba(210, 237, 249, 0.7) !important;
-    border-color: #000 !important;
-    border-top-style: solid !important;
-    border-left-style: solid !important;
-    border-right-style: solid !important;
-    border-bottom-style: solid !important;
-    border-width: 1px !important;
-    color: #000 !important;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    text-shadow: none !important;
+    text-shadow: 0px 1px 0px #000;
   }
 
-  .pm-window .closebutton, .pm-window .minimizebutton
+  .mainmenu .menugroup:nth-child(1) .button, .mainmenu .menugroup:nth-child(2) p:nth-child(1) .button, .mainmenu .menugroup:nth-child(2) p:nth-child(2) .button, .mainmenu .menugroup:nth-child(2) p:nth-child(3) .button, .mainmenu .menugroup:nth-child(3) p:nth-child(1) .button, .mainmenu .menugroup:nth-child(3) p:nth-child(2) .button, .mainmenu .menugroup:nth-child(1) .button:focus, .mainmenu .menugroup:nth-child(2) p:nth-child(1) .button:focus, .mainmenu .menugroup:nth-child(2) p:nth-child(2) .button:focus, .mainmenu .menugroup:nth-child(2) p:nth-child(3) .button:focus, .mainmenu .menugroup:nth-child(3) p:nth-child(1) .button:focus, .mainmenu .menugroup:nth-child(3) p:nth-child(2) .button:focus
   {
-    color: #000 !important;
+    border: 1px solid #4C5081;
+    background: transparent -moz-linear-gradient(center top , #7CAAC3, #526180);
+    background: linear-gradient(to bottom,hsl(201, 37%, 63%),hsl(220, 22%, 41%));
+    text-shadow: 0px -1px 0px #4C5081;
   }
 
-  .pm-window h3 small
+  .mainmenu .menugroup:nth-child(1) .button:hover, .mainmenu .menugroup:nth-child(2) p:nth-child(1) .button:hover, .mainmenu .menugroup:nth-child(2) p:nth-child(2) .button:hover, .mainmenu .menugroup:nth-child(2) p:nth-child(3) .button:hover, .mainmenu .menugroup:nth-child(3) p:nth-child(1) .button:hover, .mainmenu .menugroup:nth-child(3) p:nth-child(2) .button:hover
   {
-    color: #000 !important;
+    border: 1px solid #F26330;
+    background: transparent -moz-linear-gradient(center top , #EECC49, #F6AB52);
+    background: linear-gradient(to bottom,hsl(48, 83%, 61%),hsl(33, 90%, 64%));
+    text-shadow: 0px -1px 0px #F26330;
   }
 
-  .pm-window h3:hover
+  .menugroup .button.disabled, .menugroup .button.disabled:hover, .menugroup .button.disabled:active
   {
-    background: rgba(255, 102, 102, 0.7) !important;
+    border: 1px solid #4C5081;
+    background: #526180;
+    text-shadow: 0px -1px 0px #4C5081;
+    color: #FFF;
   }
 
-  .pm-window .closebutton:hover, .pm-window .minimizebutton:hover, .pm-window h3:hover .minimizebutton
+  .select
   {
-    color: #000 !important;
+    border-color: #000;
+    color: #252525;
+    background: rgba(255, 255, 255, 0.9);
+    text-shadow: none;
   }
 
-  .pm-window .closebutton:hover + .minimizebutton
+  .select:hover
   {
-    color: #000 !important;
+    border-color: #000;
+    color: #252525;
+    background: rgba(255, 255, 255, 1);
   }
 
-  .pm-log, .pm-window.focused .pm-log
+  .select:disabled, .select:disabled:hover
   {
-    background: rgba(255, 255, 255, 0.8) !important;
-    border-color: #000 !important;
-    border-left-style: solid !important;
-    border-right-style: solid !important;
-    border-bottom-style: solid !important;
-    border-width: 1px !important;
-    color: #000 !important;
-  }
-
-  .unread
-  {
-    background: none;
-  }
-
-  .challenge
-  {
-    background: rgba(255, 255, 255, 0.7) !important;
-    border-color: #000 !important;
-    border-right-style: solid !important;
-    border-left-style: solid !important;
-    border-width: 1px !important;
-    color: #000 !important;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    text-shadow: none !important;
-  }
-
-  .challenge .buttonbar button
-  {
-    background: rgb(102, 179, 255) !important;
-    border-color: #000 !important;
-    border-top-style: solid !important;
-    border-bottom-style: solid !important;
-    border-width: 1px;
-    color: #000 !important;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    text-shadow: none !important;
-  }
-
-  .challenge .buttonbar button:hover
-  {
-    background: rgb(210, 237, 249) !important;
-  }
-
-  .pm-log-add, .pm-window.focused .pm-log-add
-  {
-    background: none !important;
-    border-color: #000 !important;
-    border-bottom-style: solid !important;
-    border-right-style: solid !important;
-    border-left-style: solid !important;
-    border-width: 1px !important;
-    color: #000 !important;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    text-shadow: none !important;
-  }
-
-  .pm-log-add .textbox
-  {
-    color: #000 !important;
+    border-color: #000;
+    background: rgba(255, 255, 255, 0.5);
   }
 
   .mainmenufooter
   {
-    background: none !important;
-    border: none !important;
-    color: #000 !important;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    text-shadow: none !important;
+    padding: 10px;
+    border: 1px solid #000;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    color: #F6AB52;
   }
 
   .mainmenufooter a
   {
-    color: #000 !important;
+    color: #F6AB52;
   }
 
   .mainmenufooter a:hover
   {
-    color: rgb(255, 102, 102) !important;
-  } 
+    color: #EECC49;
+  }
+
+  .pm-window h3
+  {
+    background: transparent -moz-linear-gradient(center top , #F6F6F6, #E3E3E3);
+    background: linear-gradient(to bottom,hsl(0, 0%, 96%),hsl(0, 0%, 89%));
+    border-color: #000;
+    color: #000;
+  }
+
+  .pm-window h3:hover, .pm-window.focused h3, .pm-window.focused h3:hover
+  {
+    background: #E3E3E3;
+    border-color: #000;
+    color: #000;
+  }
+
+  .pm-window h3.pm-notifying
+  {
+    border: 1px solid #F26330;
+    background: transparent -moz-linear-gradient(center top , #EECC49, #F6AB52);
+    background: linear-gradient(to bottom,hsl(48, 83%, 61%),hsl(33, 90%, 64%));
+    text-shadow: 0px -1px 0px #F26330;
+    color: #FFF;
+  }
+
+  .pm-window h3.pm-notifying:hover
+  {
+    background: #F6AB52;
+    border-color: #F26330;
+    color: #FFF;
+    text-shadow: 0px -1px 0px #F26330;
+  }
+
+  .pm-log, .pm-window.focused .pm-log
+  {
+    border-color: #000;
+  }
+
+  .pm-log-add, .pm-window.focused .pm-log-add
+  {
+    border-color: #000;
+    background: transparent -moz-linear-gradient(center top , #F6F6F6, #E3E3E3);
+    background: linear-gradient(to bottom,hsl(0, 0%, 96%),hsl(0, 0%, 89%));
+  }
+
+  .pm-log-add .textbox
+  {
+    border-color: #000;
+  }
+
+  .pm-log-add .textbox:focus
+  {
+    border: 1px solid #000;
+    box-shadow: none;
+  }
+
+  .message-pm
+  {
+    color: #000;
+    font-style: italic;
+  }
+
+  .pm-window.news-embed
+  {
+    opacity: 0.6;
+  }
+
+  .pm-window.news-embed:hover
+  {
+    opacity: 0.95;
+  }
+
+  .challenge
+  {
+    border-color: #000;
+    background: #F3BC54;
+    color: #000;
+  }
   
-  /* PM Box CSS End */
+  /***********************
+  * Mainmenuwrapper ~end *
+  ***********************/
   
-  /* Tournaments CSS */
+  /***********
+  * Room CSS *
+  ***********/
   
+  .userlist
+  {
+    background: rgba(255, 255, 255, 0.5);
+    border-color: #000;
+  }
+
+  .userlist li
+  {
+    background: rgba(255, 255, 255, 0.5);
+    border-color: #000;
+  }
+
+  .userlist li em.group
+  {
+    color: #222;
+  }
+
+  .userlist li button:hover
+  {
+    background: #F9F9F9;
+  }
+
+  .chat-log-add
+  {
+    background: rgba(255, 255, 255, 0.5);
+    border-color: #000;
+  }
+
+  .chat-log-add .textbox
+  {
+    border-color: #000;
+  }
+
+  .chat-log
+  {
+    background: rgba(255, 255, 255, 0.7);
+  }
+
+  .highlighted
+  {
+    background: #FFB2B2 !important;
+  }
+
+  .chat-log .chat em
+  {
+    padding: 5px;
+  }
+
+  .chat-log .chat
+  {
+    margin: 3px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .message small
+  {
+    color: #222 !important;
+  }
+
+  .infobox
+  {
+    border-color: #000;
+    background: rgba(255, 255, 255, 0.7);
+  }
+
+  .ps-room.ps-room-light.scrollable
+  {
+    background: rgba(255, 255, 255, 0.5);
+    background-size: cover;
+    color: #000;
+    text-shadow: 0px 1px 0px #FFF;
+  }
+
+  .roomlist a.ilink
+  {
+    border-color: #000;
+    color: #252525;
+    box-shadow: 0px 0px 5px #D5D5D5;
+    background: rgba(255, 255, 255, 0.9);
+    text-shadow: none;
+  }
+
+  .roomlist a.ilink:hover
+  {
+    border-color: #000;
+    color: #252525;
+    background: rgba(255, 255, 255, 1);
+  }
+
+  .roomlist a.ilink small
+  {
+    color: #252525;
+  }
+
   .tournament-title
   {
-    background: rgb(210, 237, 249) !important;
-    color: #000;
-    border-color: #000;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    text-shadow: none !important;
+    background: rgba(255, 255, 255, 0.5);
   }
 
   .tournament-status, .tournament-toggle
   {
-    background: rgba(210, 237, 249) !important;
-    border-color: #000;
+    background: transparent -moz-linear-gradient(center top , #F6F6F6, #E3E3E3);
+    background: linear-gradient(to bottom,hsl(0, 0%, 96%),hsl(0, 0%, 89%));
+    border-right: 1px solid #000;
     color: #000;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    text-shadow: none;
+  }
+
+  .tournament-toggle
+  {
+    border-left: 1px solid #000;
   }
 
   .tournament-box
   {
-    order-color: #000;
-    color: #000 !important;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    text-shadow: none;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    background-color: rgba(242, 247, 250, 0.85);
   }
 
   .tournament-bracket
   {
-    background: rgba(21p, 237, 249, 0.8) !important;
-    background-size: cover !important;
-    color: #000;
-    border-top-style: solid !important;
-    border-bottom-style: solid !important;
-    border-width: 1px !important;
-    border-color: #000 !important;
-    font-family: Georgia, Times, 'Times New Roman', serif;
+    border-top: 1px solid #000;
+  }
+
+  .ladder table, .ladder td, .ladder th
+  {
+    border-color: #000;
     text-shadow: none;
   }
 
-  .tournament-bracket-tree
+  .ladder th
   {
-    background: rgba(210, 237, 249, 0.8) !important;
-    border-color: #000 !important;
-    color: #000 !important;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    text-shadow: none !important;
+    background: transparent -moz-linear-gradient(center top , #F6F6F6, #E3E3E3);
+    background: linear-gradient(to bottom,hsl(0, 0%, 96%),hsl(0, 0%, 89%));
   }
 
-  .tournament-tools
+  .ladder td
   {
-    background: rgba(210, 237,  249, 0.8) !important;
-    border-color: #000;
-    color: #000;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    text-shadow: none !important;
+    background: rgba(255, 255, 255, 0.4);
   }
-
-  .tournament-tools .button
-  {
-    background: rgb(102, 179, 255) !important;
-    border-color: #000 !important;
-    border-top-style: solid !important;
-    border-bottom-style: solid !important;
-    border-width: 1px !important;
-    color: #000;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    text-shadow: none !important;
-  }
-
-  .tournament-tools .button:hover
-  {
-    background: rgb(255, 102, 102) !important;
-  }
-
-  .tournament-tools .select:disabled
-  {
-    background: rgb(102, 179, 255) !important;
-    border-top-style: solid !important;
-    border-bottom-style: solid !important;
-    border-color: #000 !important;
-    border-width: 1px !important;
-    color: #000 !important;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    text-shadow: none !important;
-  }
-
-  .tournaments-tools .select:disabled:havor
-  {
-    background: rgb(255, 102, 102) !important;
-    color: #000 !important;
-  }
-
-  .tournament-tools .teamselect:disabled strong
-  {
-    color: #000;
-    text-shadow: none !important;
-  }
-
-  .tournament-tools .select
-  {
-    background: rgb(102, 179, 255) !important;
-    color: #000;
-    font-family: Georgia, Times, 'Times New Roman', serif !important;
-    text-shadow: none !important;
-  }
-
-  .tournament-tools .select:hover
-  {
-    background: rgb(255, 102, 102) !important;
-    color: #000 !important;
-  }
-
-  .tournament-format
-  {
-    color: #000 !important;
-    font-style: bold;
-    font-size: 14px !important;
-    font-family: Gerogia,Times,'Times New Roman',serif !important;
-    text-shadow: none !important;
-  }
-
-  .ps-popup.tournament-popout-bracket
-  {
-    background: rgba(15, 62, 112, 0.5);
-    color: #000 !important;
-  } 
   
-  /* Tournaments CSS End */
+  /*****************
+  * Rooms CSS ~end *
+  *****************/
   
-  /* Popup CSS */
+  /*****************
+  * Teambuider CSS *
+  *****************/
   
-  .ps-popup
+  ul li button
   {
-    background: rgb(245, 245, 245) !important;
-    color: #000 !important;
-    border-color: #000 !important;
-    border-top-style: solid !important;
-    border-bottom-style: solid !important;
-    border-left-style: none;
-    border-right-style: none;
-    border-width: 4px !important;
-    font-family: Georgia, Times,'Times New Roman',serif !important;
-    text-shadow: none !important;
+    margin-bottom: 1px;
   }
 
-  .ps-popup .buttonbar button
+  .teamchartbox
   {
-    background: rgb(210, 237, 249) !important;
-    border-color: #000 !important;
-    border-right-style: solid !important;
-    border-left-style: solid !important;
-    border-width: 1px !important;
-    color: #000 !important;
-    font-family: Georgia, Times,'Times New Roman',serif !important;
-    text-shadow: none !important;
+    border-top: 1px solid #000;
+    background: rgba(255, 255, 255, 0.5);
   }
 
-  .ps-popup .buttonbar button:hover
+  .ps-room.ps-room-light .textbox
   {
-    background: rgb(255, 102, 102) !important;
-    color: #000 !important;
+    border: 1px solid #000;
+    box-shadow: none;
   }
 
-  .ps-popup a, .ps-popup a.ilink, .popupmenu h3
+  .teamchart li.format-select select
   {
-    color: darkblue !important;
-    font-style: bold;
-    font-family: Georgia,Times,'Times New Roman',serif !important;
-    text-shadow: none !important;
+    border: 1px solid #000;
   }
 
-  .ps-popup a:hover, .ps-popup a.ilink:hover
+  .setmenu
   {
-    font-style: bold;
+    top: 3px;
   }
 
-  .ps-popup a.ilink.yours
+  .setmenu button:hover
   {
-    color: darkblue !important;
-    font-width: bold;
-    font-style: italic;
-    font-family: Georgia,Times,'Times New Roman',serif !important;
-    text-shadow: none !important;
-  }
-
-  .popupmenu button.sel
-  {
-    color: black !important;
+    background: #E3E3E3;
     border-color: #000;
   }
 
-  .popupmenu button.sel:hover
+  .setchart, .setchart-nickname
   {
-    background: transparent;
-    color: #000 !important;
-    border-color: #000;
+    border: 1px solid #000;
+    background: transparent -moz-linear-gradient(center top , #F6F6F6, #E3E3E3);
+    background: linear-gradient(to bottom,hsl(0, 0%, 96%),hsl(0, 0%, 89%));
   }
 
-  .popupmenu button:hover
+  .setchart input, .setchart-nickname input, .statform input.inputform, .setdetails, .setstats, .setchart input:hover, .setchart-nickname input:hover, .statform input.inputform:hover, .setdetails:hover, .setstats:hover, .setchart input:focus, .setchart-nickname input:focus, .statform input.inputform:focus, .setdetails:focus, .setstats:focus
   {
-    background: transparent;
-    color: #000 !important;
-    font-style: bold;
-    font-family: Georgia,Times,'Times New Roman',serif !important;
-  } 
-  
-  /* End Popup CSS */
-  
-  /* Battle CSS */
-  
-  /* Weathers */
-  
-  .sunweather,
-   .sunnydayweather,
-   .desolatelandweather
-  {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-    background: #FFEEBB url(http://i.imgur.com/DNMtOWR.gif) no-repeat scroll left top;
-    color: #664411;
-    text-shadow: #FFFFFF 1px 1px 0, #FFFFFF 1px -1px 0, #FFFFFF -1px 1px 0, #FFFFFF -1px -1px 0;
-    background-size: cover !important;
+    border: 1px solid #000;
+    box-shadow: none;
   }
 
-  .rainweather,
-   .raindanceweather,
-   .primordialseaweather
+  .setchart label, .setchart-nickname label
   {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-    background: #99BBFF url(http://i.imgur.com/NQqkU6j.gif) no-repeat scroll left top;
-    background-size: cover !important;
-    color: #0044BB;
-    text-shadow: #FFFFFF 1px 1px 0, #FFFFFF 1px -1px 0, #FFFFFF -1px 1px 0, #FFFFFF -1px -1px 0;
-  }
-
-  .sandstormweather
-  {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-    background: #E6E0AC url(http://i.imgur.com/OEB3hum.gif) no-repeat scroll left top;
-    background-size: cover !important;
-    color: #554433;
-    text-shadow: #FFFFFF 1px 1px 0, #FFFFFF 1px -1px 0, #FFFFFF -1px 1px 0, #FFFFFF -1px -1px 0;
-  }
-
-  .hailweather
-  {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-    background: #AADDEE url(http://i.imgur.com/PweinWm.gif) no-repeat scroll left top;
-    background-size: cover !important;
-    color: #114455;
-    text-shadow: #FFFFFF 1px 1px 0, #FFFFFF 1px -1px 0, #FFFFFF -1px 1px 0, #FFFFFF -1px -1px 0;
-  }
-
-  .deltastreamweather
-  {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-    background: #AAAAAA url(http://play.pokemonshowdown.com/fx/weather-strongwind.png) no-repeat scroll left top;
-    background-size: cover !important;
-    color: #666666;
-    text-shadow: #FFFFFF 1px 1px 0, #FFFFFF 1px -1px 0, #FFFFFF -1px 1px 0, #FFFFFF -1px -1px 0;
-  }
-
-  .pseudoweather
-  {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-    background: #DDAAEE url(http://play.pokemonshowdown.com/fx/weather-trickroom.png) no-repeat scroll left top;
-    background-size: cover !important;
-    color: #661155;
-    text-shadow: #FFFFFF 1px 1px 0, #FFFFFF 1px -1px 0, #FFFFFF -1px 1px 0, #FFFFFF -1px -1px 0;
-  } 
-  
-  /* Weathers End */
-  
-  /* Backgrounds */
-  
-  .backdrop
-  {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-    z-index: 0;
-    background-size: cover !important;
-    background-image: url(http://i.imgur.com/KXYj116.png);
-    opacity: 1 !important;
-  }
-
-  .backdrop[style*="bg-beach.png"]
-  {
-    background-image: url(http://i.imgur.com/KR5Xcgy.png) !important;
-    background-size: cover !important;
-    z-index: 0;
-  }
-
-  .backdrop[style*="bg-beachshore.png"]
-  {
-    background-image: url(http://i.imgur.com/kuVq9Gb.png) !important;
-    background-size: cover !important;
-    z-index: 0;
-  }
-
-  .backdrop[style*="bg-city.png"]
-  {
-    background-image: url(http://i.imgur.com/AqMv0Vr.png) !important;
-    background-size: cover !important;
-    z-index: 0;
-  }
-
-  .backdrop[style*="bg-dampcave.png"]
-  {
-    background-image: url(http://i.imgur.com/te4lJOc.png) !important;
-    background-size: cover !important;
-    z-index: 0;
-  }
-
-  .backdrop[style*="bg-deepsea.png"]
-  {
-    background-image: url(http://i.imgur.com/Kou1vu5.png) !important;
-    background-size: cover !important;
-    z-index: 0;
-  }
-
-  .backdrop[style*="bg-desert.png"]
-  {
-    background-image: url(http://i.imgur.com/4EwQDTS.png) !important;
-    background-size: cover !important;
-    z-index: 0;
-  }
-
-  .backdrop[style*="bg-earthycave.png"]
-  {
-    background-image: url(http://i.imgur.com/Ffd9WMk.png) !important;
-    background-size: cover !important;
-    z-index: 0;
-  }
-
-  .backdrop[style*="bg-forest.png"]
-  {
-    background-image: url(http://i.imgur.com/ux0Qk2g.png) !important;
-    background-size: cover !important;
-    z-index: 0;
-  }
-
-  .backdrop[style*="bg-icecave.png"]
-  {
-    background-image: url(http://i.imgur.com/jm7L77m.png) !important;
-    background-size: cover !important;
-    z-index: 0;
-  }
-
-  .backdrop[style*="bg-meadow.png"]
-  {
-    background-image: url(http://i.imgur.com/S1UT6wM.png) !important;
-    background-size: cover !important;
-    z-index: 0;
-  }
-
-  .backdrop[style*="bg-mountain.png"]
-  {
-    background-image: url(http://i.imgur.com/vSMRAXr.png) !important;
-    background-size: cover !important;
-    z-index: 0;
-  }
-
-  .backdrop[style*="bg-river.png"]
-  {
-    background-image: url(http://i.imgur.com/0EQhNGM.png) !important;
-    background-size: cover !important;
-    z-index: 0;
-  }
-
-  .backdrop[style*="bg-route.png"]
-  {
-    background-image: url(http://i.imgur.com/7GGWeJ1.png) !important;
-    background-size: cover !important;
-    z-index: 0;
-  }
-
-  .backdrop[style*="bg-thunderplains.png"]
-  {
-    background-image: url(http://i.imgur.com/nRPiAi7.png) !important;
-    background-size: cover !important;
-    z-index: 0;
-  }
-
-  .backdrop[style*="bg-volcanocave.png"]
-  {
-    background-image: url(http://i.imgur.com/UA2v1nN.png) !important;
-    background-size: cover !important;
-    z-index: 0;
-  }
-
-  .backdrop[style*="bg-gen1.png"]
-  {
-    background-image: url(http://i.imgur.com/FjWc5ma.png) !important;
-    background-size: cover !important;
-    z-index: 0;
-  } 
-  
-  /* Backgrounds End */
-  
-  /* General Battle */
-  
-  .ps-room.ps-room-opaque
-  {
-    background: rgba(210, 237, 249, 0.7);
-  }
-
-  .ps-room .battle-controls
-  {
-    background: transparent;
-  }
-
-  .ps-room .battle-controls button, .ps-room .battle-controls .button
-  {
-    background: #FFF;
-    border-left-style: solid;
-    border-right-style: solid;
-    border-color: #000;
-    border-width: 1px;
     color: #000;
-    font-family: Georgia, Times, 'Times New Roman', serif !important;
     text-shadow: none;
   }
 
-  .ps-room .battle-controls button:hover, .ps-room .battle-controls .button:hover
+  .teambuilder-results h3, .teambuilder-results .utilichart h3
   {
-    background: rgb(255, 102, 102);
-  }
-
-  .battle-controls .whatdo
-  {
+    border-color: #000;
+    background: transparent -moz-linear-gradient(center top , #F6F6F6, #E3E3E3);
+    background: linear-gradient(to bottom,hsl(0, 0%, 96%),hsl(0, 0%, 89%));
     color: #000;
+    text-shadow: none;
   }
 
-  .battle-controls .whatdo small
+  .utilichart
+  {
+    text-shadow: none;
+  }
+
+  .teambuilder-results .firstresult a, .teambuilder-results .firstresult a:hover, .teambuilder-results .result a:hover
+  {
+    background: #EEE;
+    border-color: #000;
+  }
+
+  .utilichart b
+  {
+    color: #5F769D;
+  }
+
+  .teambar button
+  {
+    background: transparent -moz-linear-gradient(center top , #F6F6F6, #E3E3E3);
+    background: linear-gradient(to bottom,hsl(0, 0%, 96%),hsl(0, 0%, 89%));
+    border-color: #000;
+  }
+
+  .teambar button:hover
+  {
+    background: #E3E3E3;
+    border-color: #000;
+  }
+
+  .teambar button:disabled, .teambar button:disabled:hover, .teambar button:disabled:active
+  {
+    background: #E3E3E3;
+    border-color: #000;
+  }
+  
+  /* #999 */
+  
+  .utilichart .labelcol em, .utilichart .widelabelcol em, .utilichart .pplabelcol em, .utilichart .statcol em, .utilichart .bstcol em
+  {
+    color: #666;
+  }
+  
+  /* #777 */
+  
+  .utilichart .itemdesccol, .utilichart .abilitydesccol, .utilichart .movedesccol
+  {
+    color: #444;
+  }
+  
+  /* #444 */
+  
+  .utilichart .col
+  {
+    color: #222;
+  }
+
+  .utilichart .illegalcol em
+  {
+    border: 1px solid #CD2B2B;
+    color: #CD2B2B;
+  }
+
+  .teambuilder-clipboard-data, .teambuilder-clipboard-data:hover
+  {
+    background: transparent -moz-linear-gradient(center top , #F6F6F6, #E3E3E3);
+    background: linear-gradient(to bottom,hsl(0, 0%, 96%),hsl(0, 0%, 89%));
+    border-color: #000;
+  }
+
+  .teambuilder-clipboard-data .section
   {
     border-color: #000;
   }
 
-  .moveselect button
+  .teambuilder-clipboard-title
   {
+    text-shadow: none;
     text-decoration: underline;
-    font-style: bold !important;
-    text-align: center !important;
-    border: none !important;
-    color: #000 !important;
-    font-family: Georgia,Times,'Times New Roman',serif !important;
-    text-shadow: none !important;
   }
 
-  .movemenu button
+  .teambuilder-clipboard-container
   {
-    height: 50px !important;
-    color: #FFF !important;
-    font-weight: bold;
-    font-family: Georgia,Times,'Times New Roman',serif !important;
-    text-shadow: none !important;
+    border-color: #F26130;
   }
+  
+  /***********************
+  * Teambuilder CSS ~end *
+  ***********************/ 
+  
+  /*************
+  * Battle CSS *
+  *************/
 
-  .movemenu button small
+  .controls
   {
-    text-shadow: none !important;
-    font-weight: normal;
-  }
-
-  .movemenu button.type-Normal
-  {
-    background: #C7AFB5 url("http://i.imgur.com/3C1Bacx.png?2") center no-repeat !important;
-    border-color: #75525C !important;
-    color: white;
-  }
-
-  .movemenu button.type-Normal small
-  {
-    color: white;
-  }
-
-  .movemenu button.type-Normal:hover
-  {
-    background: #DFCDD2 url("http://i.imgur.com/3C1Bacx.png?2") center no-repeat !important;
-  }
-
-  .movemenu button.type-Fire
-  {
-    background: #FD4B5A url("http://i.imgur.com/4sLBBTN.png?2") center no-repeat !important;
-    border-color: #AB1F24 !important;
-    color: white;
-  }
-
-  .movemenu button.type-Fire small
-  {
-    color: white;
-  }
-
-  .movemenu button.type-Fire:hover
-  {
-    background: #FF767F url("http://i.imgur.com/4sLBBTN.png?2") center no-repeat !important;
-  }
-
-  .movemenu button.type-Water
-  {
-    background: #85A8FB url("http://i.imgur.com/K7r8LVH.png?2") center no-repeat !important;
-    border-color: #1552E1 !important;
-    color: white;
-  }
-
-  .movemenu button.type-Water small
-  {
-    color: white;
-  }
-
-  .movemenu button.type-Water:hover
-  {
-    background: #A9C3FF url("http://i.imgur.com/K7r8LVH.png?2") center no-repeat !important;
-  }
-
-  .movemenu button.type-Grass
-  {
-    background: #42C665 url("http://i.imgur.com/628FI5x.png?2") center no-repeat !important;
-    border-color: #147B3D !important;
-    color: white;
-  }
-
-  .movemenu button.type-Grass small
-  {
-    color: white;
-  }
-
-  .movemenu button.type-Grass:hover
-  {
-    background: #56D879 url("http://i.imgur.com/628FI5x.png?2") center no-repeat !important;
-  }
-
-  .movemenu button.type-Electric
-  {
-    background: #FAFA72 url("http://i.imgur.com/bzW9xyl.png?2") center no-repeat !important;
-    border-color: #C6C61D !important;
-    color: white;
-  }
-
-  .movemenu button.type-Electric small
-  {
-    color: white;
-  }
-
-  .movemenu button.type-Electric:hover
-  {
-    background: #FFFF9B url("http://i.imgur.com/bzW9xyl.png?2") center no-repeat !important;
-  }
-
-  .movemenu button.type-Ice
-  {
-    background: #D8F0FA url("http://i.imgur.com/otB37l2.png?2") center no-repeat !important;
-    border-color: #7CC6EB !important;
-    color: white;
-  }
-
-  .movemenu button.type-Ice small
-  {
-    color: white;
-  }
-
-  .movemenu button.type-Ice:hover
-  {
-    background: #E6F8FF url("http://i.imgur.com/otB37l2.png?2") center no-repeat !important;
-  }
-
-  .movemenu button.type-Ground
-  {
-    background: #A8702D url("http://i.imgur.com/F2Ngn3T.png?2") center no-repeat !important;
-    border-color: #6E491F !important;
-    color: white;
-  }
-
-  .movemenu button.type-Ground small
-  {
-    color: white;
-  }
-
-  .movemenu button.type-Ground:hover
-  {
-    background: #BA843C url("http://i.imgur.com/F2Ngn3T.png?2") center no-repeat !important;
-  }
-
-  .movemenu button.type-Flying
-  {
-    background: #94B2C7 url("http://i.imgur.com/Al6Gb8u.png?2") center no-repeat !important;
-    border-color: #4A677D !important;
-    color: white;
-  }
-
-  .movemenu button.type-Flying small
-  {
-    color: white;
-  }
-
-  .movemenu button.type-Flying:hover
-  {
-    background: #A4C0D5 url("http://i.imgur.com/Al6Gb8u.png?2") center no-repeat !important;
-  }
-
-  .movemenu button.type-Poison
-  {
-    background: #9B69DA url("http://i.imgur.com/d3QQ9Af.png?2") center no-repeat !important;
-    border-color: #5E2D89 !important;
-    color: white;
-  }
-
-  .movemenu button.type-Poison small
-  {
-    color: white;
-  }
-
-  .movemenu button.type-Poison:hover
-  {
-    background: #BF8EF6 url("http://i.imgur.com/d3QQ9Af.png?2") center no-repeat !important;
-  }
-
-  .movemenu button.type-Fighting
-  {
-    background: #EF6239 url("http://i.imgur.com/0fjqBIB.png?2") center no-repeat !important;
-    border-color: #994025 !important;
-    color: white;
-  }
-
-  .movemenu button.type-Fighting small
-  {
-    color: white;
-  }
-
-  .movemenu button.type-Fighting:hover
-  {
-    background: #FA7851 url("http://i.imgur.com/0fjqBIB.png?2") center no-repeat !important;
-  }
-
-  .movemenu button.type-Psychic
-  {
-    background: #F369B3 url("http://i.imgur.com/QzQIgYi.png?2") center no-repeat !important;
-    border-color: #A52A6C !important;
-    color: white;
-  }
-
-  .movemenu button.type-Psychic small
-  {
-    color: white;
-  }
-
-  .movemenu button.type-Psychic:hover
-  {
-    background: #FD7DC1 url("http://i.imgur.com/QzQIgYi.png?2") center no-repeat !important;
-  }
-
-  .movemenu button.type-Dark
-  {
-    background: #595978 url("http://i.imgur.com/dpxY9u7.png?2") center no-repeat !important;
-    border-color: #040707 !important;
-    color: white;
-  }
-
-  .movemenu button.type-Dark small
-  {
-    color: white;
-  }
-
-  .movemenu button.type-Dark:hover
-  {
-    background: #737392 url("http://i.imgur.com/dpxY9u7.png?2") center no-repeat !important;
-  }
-
-  .movemenu button.type-Rock
-  {
-    background: #8B3E22 url("http://i.imgur.com/uQRUH3r.png?2") center no-repeat !important;
-    border-color: #48190B !important;
-    color: white;
-  }
-
-  .movemenu button.type-Rock small
-  {
-    color: white;
-  }
-
-  .movemenu button.type-Rock:hover
-  {
-    background: #A25032 url("http://i.imgur.com/uQRUH3r.png?2") center no-repeat !important;
-  }
-
-  .movemenu button.type-Bug
-  {
-    background: #3C9950 url("http://i.imgur.com/oPBAAYf.png?2") center no-repeat !important;
-    border-color: #1C4B27 !important;
-    color: white;
-  }
-
-  .movemenu button.type-Bug small
-  {
-    color: white;
-  }
-
-  .movemenu button.type-Bug:hover
-  {
-    background: #4FAF65 url("http://i.imgur.com/oPBAAYf.png?2") center no-repeat !important;
-  }
-
-  .movemenu button.type-Ghost
-  {
-    background: #906791 url("http://i.imgur.com/jwbeQbI.png?2") center no-repeat !important;
-    border-color: #33336B !important;
-    color: white;
-  }
-
-  .movemenu button.type-Ghost small
-  {
-    color: white;
-  }
-
-  .movemenu button.type-Ghost:hover
-  {
-    background: #AE81AE url("http://i.imgur.com/jwbeQbI.png?2") center no-repeat !important;
-  }
-
-  .movemenu button.type-Steel
-  {
-    background: #60756E url("http://i.imgur.com/KCc2bLu.png?2") center no-repeat !important;
-    border-color: #38A480 !important;
-    color: white;
-  }
-
-  .movemenu button.type-Steel small
-  {
-    color: white;
-  }
-
-  .movemenu button.type-Steel:hover
-  {
-    background: #829790 url("http://i.imgur.com/KCc2bLu.png?2") center no-repeat !important;
-  }
-
-  .movemenu button.type-Dragon
-  {
-    background: #62CAD9 url("http://i.imgur.com/ygEvaDc.png?2") center no-repeat !important;
-    border-color: #448A95 !important;
-    color: white;
-  }
-
-  .movemenu button.type-Dragon small
-  {
-    color: white;
-  }
-
-  .movemenu button.type-Dragon:hover
-  {
-    background: #7EDCEB url("http://i.imgur.com/ygEvaDc.png?2") center no-repeat !important;
-  }
-
-  .movemenu button.type-Fairy
-  {
-    background: #E91368 url("http://i.imgur.com/0qO7BN7.png?2") center no-repeat !important;
-    border-color: #961A45 !important;
-    color: white;
-  }
-
-  .movemenu button.type-Fairy small
-  {
-    color: white;
-  }
-
-  .movemenu button.type-Fairy:hover
-  {
-    background: #FF3C8A url("http://i.imgur.com/0qO7BN7.png?2") center no-repeat !important;
-  }
-
-  .switchselect button
-  {
-    background: #FFF;
-    border-left-style: solid;
-    border-right-style: solid;
-    border-color: #000;
-    border-width: 1px;
+    background: rgba(255, 255, 255, 0.5);
     color: #000;
-    font-family: Georgia, Times, 'Times New Roman', serif !important;
-    text-shadow: none;
-  }
-
-  .switchmenu button.disabled, .switchmenu button:disabled
-  {
-    background: #FFF;
-    border-color: #000;
-    border-left-style: solid;
-    border-right-style: solid;
-    border-width: 1px;
-    color: #000;
-    font-family: Georgia, Times, 'Times New Roman', serif !important;
-    text-shadow: none;
-  }
-
-  .switchmenu button
-  {
-    padding: 0px 0px 0px 0 !important;
-  }
-
-  .switchmenu button .hpbar
-  {
-    border-color: #000;
-  }
-
-  .megaevo
-  {
-    background: none;
-    border: none;
-    color: #000;
-  }
-
-  .leftbar, .rightbar
-  {
-    background: rgba(210, 237, 249, 0.7);
-    border-color: #000;
-  }
-
-  .trainer strong
-  {
-    color: #000;
-    font-family: Georgia,Times,'Times New Roman',serif !important;
-  }
-
-  .battle
-  {
-    border-color: #000 !important;
+    text-shadow: 0px 0px 1px #FFF;
   }
 
   .battle-log
   {
-    background: rgb(255, 255, 255);
+    background: transparent;
+    border-left: none;
+    color: #000;
+    text-shadow: 0px 0px 1px #FFF;
+  }
+
+  .battle-log .chat strong
+  {
+    color: #000;
+  }
+
+  .battle-log .chat em
+  {
+    color: #000;
+    text-shadow: none;
+    border: 1px solid #000;
+    background: #EEE;
+  }
+
+  .battle-log .chat small
+  {
+    color: #444;
+    text-shadow: none;
+  }
+
+  em[style="color:#445566;display:block;"]
+  {
+    color: #000 !important;
+    text-shadow: 0px 0px 3px #000;
+    font-style: italic !important;
+  }
+
+  .battle-log h2
+  {
     border-color: #000;
+    border-left: 1px solid #000;
+    background: rgba(255, 255, 255, 0.3);
   }
 
   .battle-log-add
   {
     background: transparent;
-    border-top-color: #000;
-    border-left-color: #000;
-    color: #000;
-    font-family: Georgia,Times,'Times New Roman',serif !important;
-    text-shadow: 0px 0px 0px !important;
   }
 
-  .battle-log-add .textbox, .battle-log-add .textbox:hover, .battle-log-add .textbox:focus
+  .battle-log-add .textbox
   {
     border-color: #000;
   }
 
-  .battle-log h2
+  .battle-log-add
   {
-    background: rgb(210, 237, 249);
-    border-color: 000;
-    color: #000;
-    font-family: Georgia,Times,'Times New Roman',serif !important;
-    text-shadow: 0px 0px 0px !important;
-  }
-
-  .turn
-  {
-    opacity: 0.7 !important;
-    background: rgb(210, 237, 249);
-    padding: 4px 8px;
-    border-width: 1px;
-    border-color: #000;
-    color: #000;
-    font-weight: bold;
-    font-style: italic;
-    font-family: Georgia,Times,'Times New Roman',serif !important;
-    text-shadow: 0px 0px 0px !important;
+    border-top-left-radius: 5px;
+    border: none;
+    text-shadow: none;
   }
 
   .battle-log .rated strong
   {
-    background: rgb(210, 237, 249);
-    font-style: italic;
-    font-family: Georgia,Times,'Times New Roman',serif !important;
-    text-shadow: 0px 0px 0px !important;
-  } 
+    background: #000;
+    text-shadow: none;
+  }
+
+  .battle-controls .whatdo
+  {
+    color: #212121;
+  }
+
+  .message-error
+  {
+    color: #922;
+    border: 1px solid #000;
+    background: #EEE;
+    margin-top: 1px;
+    padding-left: 5px !important;
+  }
+
+  .messagebar
+  {
+    background: #EEE;
+    color: #000;
+    border: 1px solid #000;
+  }
+
+  .moveselect button, .switchselect button
+  {
+    color: #212121;
+  }
+
+  .chat small
+  {
+    color: #454545;
+  }
+
+  .ps-room.ps-room-opaque
+  {
+    background: rgba(255, 255, 255, 0.5);
+    color: #000;
+    text-shadow: none;
+    border-right: none;
+  }
   
-  /* General Battle End */
+  /* Battle Background */
+
+  .backdrop
+  {
+    width: 640px;
+    height: 360px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    background: -50px -90px;
+    opacity: 1 !important;
+  }
+
+  .backdrop:before
+  {
+    display: block;
+    content: "";
+    background: url("http://www.spacewallpapershd.com/wp-content/uploads/2015/01/space_view_of_the_earth_hd_wallpaper_for_android_.jpg");
+    background-size: cover;
+    width: 640px;
+    height: 360px;
+  }
   
-  /* Battle CSS End */;
+  /* Battle Background ~end */
+  
+  /*******************
+  * Leftbar/Rigthbar *
+  *******************/
+
+  .rightbar
+  {
+    border-color: rgba(215,215,215,0.5);
+  }
+
+  .leftbar
+  {
+    border-color: rgba(215,215,215,0.5);
+  }
+
+  /************************
+  * Leftbar/Rigthbar ~end *
+  ************************/
+  
+  /*****************
+  * Battle Weather *
+  *****************/
+
+  .weather
+  {
+    text-shadow: none;
+    color: rgba(0,0,0,0);
+  }
+
+  .weather em small
+  {
+    font-size: 7pt;
+    color: white;
+    text-shadow: 1px 1px black;
+    position: absolute;
+    left: 0;
+    top: 85px;
+    width: 95px;
+    text-align: center;
+  }
+
+  .sunweather, .sunnydayweather, .desolatelandweather
+  {
+    background: url(http://i.imgur.com/DNMtOWR.gif) scroll left top;
+  }
+
+  .rainweather, .raindanceweather, .primordialseaweather
+  {
+    background: url(http://i.imgur.com/NQqkU6j.gif) scroll left top;
+  }
+
+  .deltastreamweather
+  {
+    background: url(http://i.imgur.com/OEB3hum.gif) scroll left top;
+  }
+
+  .hailweather
+  {
+    background: url(http://i.imgur.com/PweinWm.gif) scroll left top;
+  }
+
+  .sandstormweather
+  {
+    background: url(http://i.imgur.com/OEB3hum.gif) scroll left top;
+  }
+
+  .pseudoweather
+  {
+    background: url(http://play.pokemonshowdown.com/fx/weather-trickroom.png) scroll left top;
+  }
+  
+  /**********************
+  * Battle Weather ~end *
+  **********************/
+  
+  .messagebar
+  {
+    z-index: 10;
+  }
+
+  .foehint div
+  {
+    z-index: 11;
+  }
+
+  .battle-controls
+  {
+    background: rgba(51,51,51,0.7);
+  }
+
+  .whatdo .healthy
+  {
+    position: absolute;
+    right: 8px;
+  }
+
+  .movecontrols
+  {
+    float: left;
+  }
+
+  .movemenu
+  {
+    width: 302px;
+  }
+
+  .movemenu button
+  {
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    border-width: 0;
+    box-shadow: none;
+    color: black;
+    font-size: 10pt;
+    font-family: Arial, sans-serif;
+    padding-top: 0px;
+    margin: 0px;
+    margin-bottom: 2px;
+  }
+
+  .movemenu button:hover
+  {
+    top: -2px;
+  }
+
+  .movemenu button small
+  {
+    text-align: center;
+    width: 62px;
+    margin-top: 0px;
+  }
+
+  .movemenu button small.type
+  {
+    display: none;
+  }
+
+  .movemenu button small.pp
+  {
+    padding: 6px 0px 2px;
+    color: white;
+    font-size: 8pt;
+    text-shadow: none;
+  }
+
+  .movemenu button small.pp:before
+  {
+    content: 'PP ';
+  }
+
+  .movemenu button.type-Normal, .movemenu button.type-Normal:hover
+  {
+    background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -150px -50px !important;
+  }
+
+  .movemenu button.type-Fire, .movemenu button.type-Fire:hover
+  {
+    background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll 0px -50px !important;
+  }
+
+  .movemenu button.type-Water, .movemenu button.type-Water:hover
+  {
+    background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -450px -150px !important;
+  }
+
+  .movemenu button.type-Electric, .movemenu button.type-Electric:hover
+  {
+    background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll 0px 0px !important;
+  }
+
+  .movemenu button.type-Grass, .movemenu button.type-Grass:hover
+  {
+    background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -450px -100px !important;
+  }
+
+  .movemenu button.type-Ice, .movemenu button.type-Ice:hover
+  {
+    background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -150px 0px !important;
+  }
+
+  .movemenu button.type-Fighting, .movemenu button.type-Fighting:hover
+  {
+    background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -150px -150px !important;
+  }
+
+  .movemenu button.type-Poison, .movemenu button.type-Poison:hover
+  {
+    background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -450px 0px !important;
+  }
+
+  .movemenu button.type-Ground, .movemenu button.type-Ground:hover
+  {
+    background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll 0px -150px !important;
+  }
+
+  .movemenu button.type-Flying, .movemenu button.type-Flying:hover
+  {
+    background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -300px -50px !important;
+  }
+
+  .movemenu button.type-Psychic, .movemenu button.type-Psychic:hover
+  {
+    background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -300px 0px !important;
+  }
+
+  .movemenu button.type-Bug, .movemenu button.type-Bug:hover
+  {
+    background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll 0px -100px !important;
+  }
+
+  .movemenu button.type-Rock, .movemenu button.type-Rock:hover
+  {
+    background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -150px -200px !important;
+  }
+
+  .movemenu button.type-Ghost, .movemenu button.type-Ghost:hover
+  {
+    background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -450px -50px !important;
+  }
+
+  .movemenu button.type-Dragon, .movemenu button.type-Dragon:hover
+  {
+    background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -300px -150px !important;
+  }
+
+  .movemenu button.type-Dark, .movemenu button.type-Dark:hover
+  {
+    background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -150px -100px !important;
+  }
+
+  .movemenu button.type-Steel, .movemenu button.type-Steel:hover
+  {
+    background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll 0px -200px !important;
+  }
+
+  .movemenu button.type-Fairy, .movemenu button.type-Fairy:hover
+  {
+    background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -300px -100px !important;
+  }
+
+  .movemenu button.type-undefined, .movemenu button.type-undefined:hover
+  {
+    background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -300px -200px !important;
+  }
+
+  .movemenu button:disabled
+  {
+    background: url(http://i.imgur.com/VmJQj2Y.png) no-repeat scroll -300px -200px !important;
+    opacity: .5;
+  }
+
+  .movemenu label
+  {
+    width: 85px;
+    text-align: center;
+    font-size: 0;
+    position: absolute;
+    top: 55px;
+    right: 250px;
+  }
+
+  .movemenu label input
+  {
+    position: relative;
+    top: 1px;
+  }
+
+  .movemenu label:after
+  {
+    content: " Mega evolution";
+    font-size: 11pt;
+    color: #000;
+  }
+
+  .shiftselect
+  {
+    float: left;
+    padding-left: 13px;
+    width: 72px;
+  }
+
+  .switchcontrols
+  {
+    float: left;
+  }
+
+  .switchselect button
+  {
+    text-shadow: 0px 0px 1px #EEE;
+    color: #151515;
+    box-shadow: none;
+  }
+
+  .movecontrols ~ .switchcontrols
+  {
+    float: right;
+  }
+
+  .switchselect ~ .switchmenu
+  {
+    width: 248px;
+    margin: 0px;
+  }
+
+  .switchmenu button, .switchmenu button:hover, .switchmenu button.disabled
+  {
+    border: 1px solid black !important;
+    box-shadow: none;
+    font-size: 8pt;
+    right: 0px;
+    color: #111111 !important;
+    border-radius: 18px;
+    height: 36px;
+    width: 60px;
+    color: rgba(0,0,0,0) !important;
+    text-shadow: none;
+    margin: 1px;
+  }
+
+  .switchmenu:nth-child(2) button, .switchmenu:nth-child(2) button:hover, .switchmenu:nth-child(2) button:disabled
+  {
+    background: linear-gradient(#71231e, #84261d 49%, #541812 51%, #99201a) !important;
+  }
+
+  .switchmenu:nth-child(3) button, .switchmenu:nth-child(3) button:hover, .switchmenu:nth-child(3) button:disabled
+  {
+    background: linear-gradient(#246e3f, #2d8f54 49%, #165029 51%, #39a161) !important;
+  }
+
+  .switchmenu button .pokemonicon
+  {
+    margin: -4px 10px;
+  }
+
+  .switchmenu button .hpbar, .switchmenu button .status
+  {
+    display: none;
+  }
+
+  .switchselect ~ .switchmenu button, .switchselect ~ .switchmenu button:hover, .switchselect ~ .switchmenu button:disabled
+  {
+    background: linear-gradient(#40aa40, #70dd70 30%, #159040 80%, #208020) !important;
+    background: -moz-linear-gradient(#40aa40, #70dd70 30%, #159040 80%, #208020) !important;
+    border-radius: 15px;
+    color: #111 !important;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+    height: 30px;
+    width: 122px;
+  }
+
+  .switchselect ~ .switchmenu button .pokemonicon
+  {
+    margin: -4px 0;
+  }
+
+  .switchselect ~ .switchmenu button .status
+  {
+    display: block;
+  }
+
+  .switchselect ~ .switchmenu button .hpbar
+  {
+    display: block;
+    border-color: #333333;
+    width: 92px;
+    margin-left: 11px;
+  }
+
+  .switchselect ~ .switchmenu button .status
+  {
+    position: relative;
+    left: 106px;
+  }
+
+  .switchmenu button:hover
+  {
+    top: -2px;
+  }
+
+  .switchmenu button:disabled
+  {
+    top: 0px;
+    opacity: .5;
+  }
+
+  .movecontrols, .shiftselect, .switchcontrols
+  {
+    z-index: 12;
+  }
+
+  .moveselect button, .shiftselect button, .switchselect button
+  {
+    background: rgba(0,0,0,0) !important;
+    box-shadow: none;
+    text-shadow: 0px 0px 1px #EEE;
+  }
+
+  
+  /* SwitchMenu buttons CSS */
+  
+  /* Health, State, Info bar */
+  
+  .statbar
+  {
+    position: absolute;
+    display: none;
+    width: 186px;
+    background: url(http://i.imgur.com/eYsfnK4.png);
+    background-repeat: no-repeat;
+    background-position: 0px 1px;
+    min-height: 40px;
+    padding: 2px 4px 2px 26px;
+  }
+
+  .statbar strong
+  {
+    position: absolute;
+    left: 30px;
+    top: 6px;
+    font-size: 9px;
+    font-weight: normal;
+    display: block;
+    text-align: center;
+    color: #FFF;
+    text-shadow: #000 1px 1px 0, #000 1px -1px 0, #000 -1px 1px 0, #000 -1px -1px 0;
+  }
+
+  .statbar strong small
+  {
+    font-size: 9px;
+    font-weight: normal;
+  }
+
+  .statbar .hpbar
+  {
+    position: relative;
+    border: 1px solid #131313;
+    background: #FCFEFF;
+    height: 6px;
+    margin: 0 0 0 0;
+    width: 151px;
+    border-radius: 0px;
+    padding: 0;
+    top: -2px;
+  }
+
+  .hptextborder
+  {
+    display: none !important;
+  }
+
+  .statbar .hpbar .hp
+  {
+    height: 3px;
+    border-top: 1px solid #007734;
+    background: #00bb51;
+    border-bottom: 2px solid #007734;
+    border-radius: 0px;
+  }
+
+  .statbar .hpbar .hp-yellow
+  {
+    background-color: #f5d538;
+    border-color: #be9f0a;
+  }
+
+  .statbar .hpbar .hp-red
+  {
+    background-color: #ee4928;
+    border-color: #a3260d;
+  }
+
+  .statbar .hpbar .prevhp
+  {
+    background: #BBEECC;
+    height: 6px;
+    border-radius: 0px;
+  }
+
+  .statbar .hpbar .prevhp-yellow
+  {
+    background-color: #fcf4ca;
+  }
+
+  .statbar .hpbar .prevhp-red
+  {
+    background-color: #facec5;
+  }
+
+  .hptext
+  {
+    margin-top: 2px;
+  }
+
+  .statbar .hpbar .hptext
+  {
+    position: absolute;
+    color: #FFFFFF;
+    text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
+    font-size: 9px;
+    width: 32px;
+    height: 12px;
+    top: -1px;
+    text-align: center;
+  }
+
+  .rstatbar .hpbar .hptext
+  {
+    width: 40px;
+    height: 15px;
+    background: url(http://i.imgur.com/1oaSYb8.png);
+    right: -42px;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .lstatbar .hpbar .hptext
+  {
+    width: 35px;
+    height: 15px;
+    background: url(http://i.imgur.com/iAy0D88.png);
+    left: -55px;
+    border-radius: 4px 0 0 4px;
+    padding-left: 2px;
+  }
+
+  .statbar .status
+  {
+    margin-top: 15px;
+    min-height: 10px;
+    font-size: 7pt;
+  }
+
+  .statbar span.brn, .statbar span.psn, .statbar span.slp, .statbar span.par, .statbar span.frz
+  {
+    position: absolute;
+    left: -21px;
+    top: 10px;
+    font-size: 8px;
+    padding: 1px 2px;
+    border: 0;
+    border-radius: 3px;
+  }
+
+  .statbar span.bad
+  {
+    background: #e74c3c;
+    color: #ecf0f1;
+    border-color: #c0392b;
+  }
+
+  .statbar span.good
+  {
+    background: #27ae60;
+    color: #ecf0f1;
+    border-color: #067A37;
+  }
+
+  .statbar span.neutral
+  {
+    background: #7f8c8d;
+    color: #ecf0f1;
+    border: 1px solid #2c3e50;
+  }
+  
+  /* Health, State, Info bar ~end */
+
+  .pfx-panel
+  {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .pfx-topbar
+  {
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom-color: #87C1F2;
+  }
+
+  .replay-wrapper .battle-log
+  {
+    height: 410px;
+    top: -35px;
+  }
+
+  .replay-wrapper
+  {
+    top: 40px;
+  }
+
+  .jslider .jslider-value
+  {
+    color: #000;
+    text-shadow: 0px 0px 1px #DDD;
+  }
+
+  .jslider .jslider-label
+  {
+    opacity: 0.8;
+    text-shadow: 0px 0px 1px #AB8995;
+  }
+
+  #tooltipwrapper
+  {
+    z-index: 1000;
+  }
+  
+  /******************
+  * Battle CSS ~end *
+  ******************/
+
+  .ps-room .battle-controls
+  {
+    background: transparent !important;
+  }
+  
+/*** Charles Paroissien ***/;
 }
